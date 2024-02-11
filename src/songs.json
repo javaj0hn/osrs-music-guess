@@ -1,0 +1,105 @@
+{
+    "songs": [{
+            "title": "Arrival",
+            "UnlockDetails": "Unlocked in Falador",
+            "Members": false,
+            "Duration": "1:39"
+        },
+        {
+            "title": "Coil",
+            "UnlockDetails": "Unlocked during the fight with Zulrah (Can be unlocked while spectating using fairy ring code dlr)",
+            "Members": true,
+            "Duration": "4:52"
+        },
+        {
+            "title": "Dangerous",
+            "UnlockDetails": "Unlocked in the Wilderness",
+            "Members": false,
+            "Duration": "2:13"
+        },
+        {
+            "title": "Emotion",
+            "UnlockDetails": "Unlocked at the Tree Gnome Maze",
+            "Members": true,
+            "Duration": "3:12"
+        },
+        {
+            "title": "Scape Original",
+            "UnlockDetails": "Unlocked automatically",
+            "Members": false,
+            "Duration": "3:07"
+        },
+        {
+            "title": "Scape Main",
+            "UnlockDetails": "Unlocked automatically",
+            "Members": false,
+            "Duration": "3:13"
+        },
+        {
+            "title": "Forever",
+            "UnlockDetails": "Unlocked in Edgeville",
+            "Members": false,
+            "Duration": "3:39"
+        },
+        {
+            "title": "Horizon",
+            "UnlockDetails": "Unlocked in Taverley or during Beekeeper random event",
+            "Members": false,
+            "Duration": "3:25"
+        },
+        {
+            "title": "Background",
+            "UnlockDetails": "Unlocked on Entrana",
+            "Members": true,
+            "Duration": "4:02"
+        },
+        {
+            "title": "Sea Shanty 2",
+            "UnlockDetails": "Unlocked in Port Sarim",
+            "Members": false,
+            "Duration": "2:04"
+        },
+        {
+            "title": "Nightfall",
+            "UnlockDetails": "Unlocked south of Falador.",
+            "Members": false,
+            "Duration": "3:47"
+        },
+        {
+            "title": "Start",
+            "UnlockDetails": "Unlocked at Draynor Village.",
+            "Members": false,
+            "Duration": "2:45"
+        },
+        {
+            "title": "Serenade",
+            "UnlockDetails": "Unlocked at the Observatory",
+            "Members": true,
+            "Duration": "3:05"
+        },
+        {
+            "title": "Newbie Melody",
+            "UnlockDetails": "Unlocked at Tutorial Island",
+            "Members": false,
+            "Duration": "3:42"
+        },
+        {
+            "title": "Harmony",
+            "UnlockDetails": "Unlocked in the Lumbridge",
+            "Members": false,
+            "Duration": "3:37"
+        },
+        {
+            "title": "Fishing",
+            "UnlockDetails": "Unlocked at Catherby",
+            "Members": true,
+            "Duration": "3:08"
+        },
+        {
+            "title": "Autumn Voyage",
+            "UnlockDetails": "Unlocked in Lumbridge",
+            "Members": false,
+            "Duration": "2:16"
+        }
+    ]
+}
