@@ -30,7 +30,8 @@
 
         if (userGuess.toLowerCase() === currentSong.title.toLowerCase()) {
             userStatus = true;
-        } else {
+        } else {            
+            document.getElementById('songInput').value = '';
             userStatus = false;
         }
     }
@@ -72,7 +73,7 @@
     </div>
     {/if}
     <div class="flex items-center">
-        <input class="border border-gray-700 rounded-lg p-2 m-2 text-white bg-gray-800" type="text" list="songs" placeholder="Song Title..." bind:value={userGuess} on:keydown={handleEnter} />
+        <input id="songInput" class="border border-gray-700 rounded-lg p-2 m-2 text-white bg-gray-800" type="text" list="songs" placeholder="Song Title..." bind:value={userGuess} on:keydown={handleEnter} />
         <datalist id="songs">
             {#each songs.songs as song}
             <option value={song.title} />
