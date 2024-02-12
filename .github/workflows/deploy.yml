@@ -16,16 +16,20 @@ jobs:
         with:
           node-version: 18
           cache: npm
+      
+      - name: Install Dependencies
+        run: npm install
 
       - name: Build Package
+        env:
+          BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
           npm run build
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: build
-          path: build/
+          path: 'build/'
 
   deploy:
     needs: build_site
@@ -35,6 +39,10 @@ jobs:
       pages: write
       id-token: write
 
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+      
     steps:
       - name: Deploy
         id: deployment
