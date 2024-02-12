@@ -4,7 +4,7 @@ on:
   push:
     branches: 'gh-pages'
 
-jobs:
+jobs: 
   build_site:
     runs-on: ubuntu-latest
     steps:
