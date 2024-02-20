@@ -100,6 +100,54 @@
             "UnlockDetails": "Unlocked in Lumbridge",
             "Members": false,
             "Duration": "2:16"
+        },
+        {
+            "title": "Scape Scared",
+            "UnlockDetails": "Unlocked automatically",
+            "Members": false,
+            "Duration": "3:17"
+        },
+        {
+            "title": "Home Sweet Home",
+            "UnlockDetails": "Unlocked inside a Player-owned house",
+            "Members": true,
+            "Duration": "5:21"
+        },
+        {
+            "title": "Spooky",
+            "UnlockDetails": "Unlocked at Draynor Manor, during the Gravedigger random event and during the 2021 Halloween event.",
+            "Members": false,
+            "Duration": "3:35"
+        },
+        {
+            "title": "Still Night",
+            "UnlockDetails": "Unlocked at an area around Varrock",
+            "Members": false,
+            "Duration": "2:45"
+        },
+        {
+            "title": "Wilderness",
+            "UnlockDetails": "Unlocked in the Wilderness",
+            "Members": false,
+            "Duration": "3:30"
+        },
+        {
+            "title": "Wonder",
+            "UnlockDetails": "Unlocked in the Wilderness",
+            "Members": false,
+            "Duration": "3:12"
+        },
+        {
+            "title": "Workshop",
+            "UnlockDetails": "Unlocked in Falador",
+            "Members": false,
+            "Duration": "4:10"
+        },
+        {
+            "title": "Yesteryear",
+            "UnlockDetails": "Unlocked in Lumbridge",
+            "Members": false,
+            "Duration": "3:56"
         }
     ]
 }
