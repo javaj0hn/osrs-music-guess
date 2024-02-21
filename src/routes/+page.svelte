@@ -70,20 +70,21 @@
         }
     }
 
-    if (typeof window !== 'undefined') {
-        // Function to check if the user is on a mobile device
-        function isMobileDevice() {
-            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-        }
+    if (typeof navigator !== 'undefined') {
+    const userAgent = navigator.userAgent.toLowerCase();
 
-        // If user is on a mobile device, play audio on touchstart event
-        if (isMobileDevice()) {
-            let audio = document.getElementById("song");
-            document.addEventListener("touchstart", function () {
-                audio.play();
-            });
-        }
+    // Check if userAgent indicates a mobile device
+    const isMobileDevice = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+
+    if (isMobileDevice) {
+        // If userAgent indicates a mobile device, add touchstart event listener to play audio
+        const audio = document.getElementById("song");
+        document.addEventListener("touchstart", function() {
+            audio.play();
+        });
     }
+}
+    
 
 </script>
 
