@@ -1,7 +1,13 @@
 <script>
     import "../app.css";
     import Fa from 'svelte-fa'
-    import { faArrowsRotate, faLightbulb, faPlay, faCheck, faX } from '@fortawesome/free-solid-svg-icons'
+    import {
+        faArrowsRotate,
+        faLightbulb,
+        faPlay,
+        faCheck,
+        faX
+    } from '@fortawesome/free-solid-svg-icons'
     // read songs.json file
     import songs from "../songs.json";
 
@@ -62,6 +68,19 @@
         if (event.key === "Enter") {
             guessSong();
         }
+    }
+
+    // Function to check if the user is on a mobile device
+    function isMobileDevice() {
+        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    }
+
+    // If user is on a mobile device, play audio on touchstart event
+    if (isMobileDevice()) {
+        let audio = document.getElementById("song");
+        document.addEventListener("touchstart", function () {
+            audio.play();
+        });
     }
 
 </script>
