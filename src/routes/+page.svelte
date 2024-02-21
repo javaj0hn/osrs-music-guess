@@ -96,7 +96,7 @@
     {/if}
     <div class="flex items-center">
         {#each randomSongs as song}
-        <input type="radio" id={song.title} name="song" value={song.title} />
+        <input type="radio" id={song.title} name="song" value={song.title} class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500" />
         <label for={song.title} class="ml-1 mr-2 text-white">{song.title}</label>
         {/each}
         <datalist id="songs">
