@@ -1,0 +1,24 @@
+{
+    "items": [
+        {
+            "name": "Fire Rune",
+            "image": "554.png"
+        },
+        {
+            "name": "Rune Scimitar",
+            "image": "Rune_scimitar.png"
+        },
+        {
+            "name": "Castle Wars Ticket",
+            "image": "Castle_wars_ticket.png"
+        },
+        {
+            "name": "Mark Of Grace",
+            "image": "Mark_of_grace.png"
+        },
+        {
+            "name": "Dragon Scimitar",
+            "image": "Dragon_scimitar.png"
+        }
+    ]
+}
