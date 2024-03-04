@@ -4,44 +4,74 @@
 
     import items from "../../items.json";
 
-    console.log("Hey");
+    // function to randomly select 28 items from the items.json file
+    function randomizeItems() {
+        let randomItems = [];
+        let randomIndex = 0;
+        let randomItem = {};
 
-    let test = undefined;
+        for (let i = 0; i < 28; i++) {
+            randomIndex = Math.floor(Math.random() * items.items.length);
+            randomItem = items.items[randomIndex];
+            randomItems.push(randomItem);
+        }
+
+        return randomItems;
+    }
+
+    let randomItems = randomizeItems();
 
     // function to handle when enter is pressed while in input field
     function handleEnter(event, item, index) {
         console.log("Yes")
+        console.log(item)
+
         if (event.key === 'Enter') {
 
             // if input equals item name
-            if (event.target.value.toLowerCase() === item.name.toLowerCase()) {
-                items.items[index].correct = true;
+            if (event.target.value.toLowerCase() === item.title.toLowerCase()) {
+                randomItems[index].correct = true;
                 event.target.classList.add('hidden');
             }
             else {
-                items.items[index].correct = false;
+                randomItems[index].correct = false;
                 event.target.classList.add('hidden');
             }
         }
         return
     }
 
+    function handleInput(event) {
+        console.log(event.target.value)
+        if (event.key === 'Enter') {
+            console.log(event.target.value);
+
+            // if value exists in randomItems
+            for (let i = 0; i < randomItems.length; i++) {
+                if (event.target.value.toLowerCase() === randomItems[i].title.toLowerCase()) {
+                    randomItems[i].correct = true;
+                    event.target.value = "";
+                }
+            }
+        }
+    }
+
 </script>
 
 <div class="flex flex-col items-center justify-center h-screen bg-gray-900 relative">
+    <div class="score text-green-500 text-lg">Score: {randomItems.filter(item => item.correct).length}/28</div> <!-- Display score above inventory -->
     <div class="inventory relative">
         <div class="grid">
-            {#each items.items as item, i}
+            {#each randomItems as item, i}
                 <div class="item relative">
-                    <div class="relative">
-                        <img src="items/{item.image}"/>
-                        <input type="text" class="w-8 input" on:keydown={event => handleEnter(event, item, i)} />
+                    <div class="relative items-center">
+                        <img src="https://oldschool.runescape.wiki/images/{item.image}"/>
                         {#if item.correct === true}
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 absolute top-0 right-0 m-1" viewBox="0 0 20 20" fill="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 absolute top-0 right-0 m-1 answerIcon" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M0 11l2-2 5 5L18 3l2 2L7 18z" clip-rule="evenodd" />
                             </svg>
                             {:else if item.correct === false}
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 absolute top-0 right-0 m-1" viewBox="0 0 20 20" fill="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 absolute top-0 right-0 m-1 answerIcon" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M5.293 5.293a1 1 0 0 1 1.414 0L10 8.586l3.293-3.293a1 1 0 0 1 1.414 1.414L11.414 10l3.293 3.293a1 1 0 1 1-1.414 1.414L10 11.414l-3.293 3.293a1 1 0 0 1-1.414-1.414L8.586 10 5.293 6.707a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/>
                             </svg>
                         {/if}
@@ -51,6 +81,8 @@
         </div>
     </div>
     <div class="flex justify-center mt-4">
+        <input type="text" class="w-1/2 input" on:keydown={event => handleInput(event)} />
+        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" on:click={event => handleEnter(event)}>Submit</button>
     </div>
 </div>
 
@@ -71,10 +103,9 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr); /* 4 columns */
         grid-template-rows: repeat(7, 1fr); /* 7 rows */
-        gap: 23px; /* Gap between grid items */
+        gap: 42px; /* Gap between grid items */
         position: absolute;
-        top: 18px;
-        left: 52px;
+        left: 25px;
     }
 
     /* Grid item */
@@ -86,29 +117,62 @@
         padding-right: 23px;
     }
 
+    /* Center images within grid items */
+    .item img {
+        display: block; /* Ensure images behave as block elements */
+        margin: 0 auto; /* Center the images horizontally */
+    }
+
+    .answerIcon {
+        display: block; /* Ensure images behave as block elements */
+        margin: 0 auto; /* Center the images horizontally */
+    }
+
+
         /* Style for the input field */
     .input {
         margin-top: 1px; /* Adjust spacing between image and input */
         background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
-        border-radius: 6px; /* Rounded border */
-        border: 0.5px solid #333; /* Border color */
-        transition: all 0.3s ease; /* Smooth transition */
-        font-family: 'Runescape', sans-serif; /* Apply Runescape font to all text */
+        height: 38px; /* Height of input field */
+        width: 100%;
     }
 
-    .input:focus {
-        font-size: 14px; /* Larger font size when focused */
-        padding: 2px 6px; /* Adjusted padding when focused */
-        width: 50px;
-    }
+    button {
+    margin-left: 12px; /* Adjust margin for spacing */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
 
     /* Style for the input field */
     .item input {
         margin-top: 1px; /* Adjust spacing between image and input */
         background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
         border: 0.5px solid #333; /* Border color */
-        border-radius: 6px; /* Border radius */
-        font-family: 'Runescape', sans-serif; /* Apply Runescape font to all text */
+        width: 100%;
     }
+
+    .input:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+.input:focus::placeholder {
+    color: transparent; /* Hide placeholder text when focused */
+}
+
+.input:focus + .cursor::after {
+    content: "|"; /* Display flashing cursor */
+    animation: cursor-blink 1s infinite; /* Blink animation */
+}
+
+@keyframes cursor-blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
     
 </style>
