@@ -1,11 +1,13 @@
 <script>
-    import { onDestroy } from 'svelte';
+    import {
+        onDestroy
+    } from 'svelte';
     import "../../app.css";
     export let imagePath = "../../static/inven_clean.png";
 
     import items from "../../items.json";
 
-    let timer = 1; // 5 minutes in seconds
+    let timer = 300; // 5 minutes in seconds
     let interval;
     let formattedTime = formatTime(timer);
 
@@ -45,25 +47,25 @@
     }
 
     // function to randomly select 28 items from the items.json file
-function randomizeItems() {
-    let randomItems = [];
-    let randomIndex = 0;
-    let randomItem = {};
-    let selectedIndexes = new Set();
+    function randomizeItems() {
+        let randomItems = [];
+        let randomIndex = 0;
+        let randomItem = {};
+        let selectedIndexes = new Set();
 
-    while (randomItems.length < 28 && randomItems.length < items.items.length) {
-        randomIndex = Math.floor(Math.random() * items.items.length);
+        while (randomItems.length < 28 && randomItems.length < items.items.length) {
+            randomIndex = Math.floor(Math.random() * items.items.length);
 
-        // Check if the random index has been selected before
-        if (!selectedIndexes.has(randomIndex)) {
-            randomItem = items.items[randomIndex];
-            randomItems.push(randomItem);
-            selectedIndexes.add(randomIndex);
+            // Check if the random index has been selected before
+            if (!selectedIndexes.has(randomIndex)) {
+                randomItem = items.items[randomIndex];
+                randomItems.push(randomItem);
+                selectedIndexes.add(randomIndex);
+            }
         }
-    }
 
-    return randomItems;
-}
+        return randomItems;
+    }
 
 
     let randomItems = randomizeItems();
@@ -79,8 +81,7 @@ function randomizeItems() {
             if (event.target.value.toLowerCase() === item.title.toLowerCase()) {
                 randomItems[index].correct = true;
                 event.target.classList.add('hidden');
-            }
-            else {
+            } else {
                 randomItems[index].correct = false;
                 event.target.classList.add('hidden');
             }
@@ -89,21 +90,21 @@ function randomizeItems() {
     }
 
     function handleInput(event) {
-    const inputText = event.target.value.trim().toLowerCase();
-    if (event.key === 'Enter') {
-        for (let i = 0; i < randomItems.length; i++) {
-            const correctTitle = randomItems[i].title.toLowerCase();
-            const cleanCorrectTitle = correctTitle.replace(/\([^)]*\)/g, '').trim(); // Remove parentheses and their content from correct item title
-            const cleanInputText = inputText.replace(/\([^)]*\)/g, '').trim(); // Remove parentheses and their content from input text
-            console.log(cleanInputText, cleanCorrectTitle)
+        const inputText = event.target.value.trim().toLowerCase();
+        if (event.key === 'Enter') {
+            for (let i = 0; i < randomItems.length; i++) {
+                const correctTitle = randomItems[i].title.toLowerCase();
+                const cleanCorrectTitle = correctTitle.replace(/\([^)]*\)/g, '').trim(); // Remove parentheses and their content from correct item title
+                const cleanInputText = inputText.replace(/\([^)]*\)/g, '').trim(); // Remove parentheses and their content from input text
+                console.log(cleanInputText, cleanCorrectTitle)
 
-            if (cleanInputText === cleanCorrectTitle || cleanInputText === correctTitle) {
-                randomItems[i].correct = true;
-                event.target.value = ""; // Clear input field on correct answer
+                if (cleanInputText === cleanCorrectTitle || cleanInputText === correctTitle) {
+                    randomItems[i].correct = true;
+                    event.target.value = ""; // Clear input field on correct answer
+                }
             }
         }
     }
-}
     // Start the timer when component is mounted
     startTimer();
 
@@ -114,7 +115,8 @@ function randomizeItems() {
 </script>
 
 <div class="flex flex-col items-center justify-center h-screen bg-gray-900 relative">
-    <div class="score text-green-500 text-lg">Score: {randomItems.filter(item => item.correct).length}/28 | Time Remaining: {formattedTime}</div>
+    <div class="score text-green-500 text-lg">Score: {randomItems.filter(item => item.correct).length}/28 | Time
+        Remaining: {formattedTime}</div>
     <div class="inventories flex">
         <div class="inventory relative">
             <div class="grid">
@@ -158,17 +160,21 @@ function randomizeItems() {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'Runescape', sans-serif; /* Apply Runescape font to all text */
+        font-family: 'Runescape', sans-serif;
+        /* Apply Runescape font to all text */
     }
 
     /* Grid layout */
     .grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 4 columns */
-        grid-template-rows: repeat(7, 1fr); /* 7 rows */
-        gap: 10px;/* Gap between grid items */
+        grid-template-columns: repeat(4, 1fr);
+        /* 4 columns */
+        grid-template-rows: repeat(7, 1fr);
+        /* 7 rows */
+        gap: 10px;
+        /* Gap between grid items */
         position: absolute;
-        
+
     }
 
     /* Grid item */
@@ -176,82 +182,107 @@ function randomizeItems() {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 10px; /* Font size */
+        font-size: 10px;
+        /* Font size */
         padding-right: 18px;
         padding-left: 18px;
     }
 
     /* Center images within grid items */
     .item img {
-        display: block; /* Ensure images behave as block elements */
-        margin: 0 auto; /* Center the images horizontally */
+        display: block;
+        /* Ensure images behave as block elements */
+        margin: 0 auto;
+        /* Center the images horizontally */
     }
 
     .answerIcon {
-    position: absolute; /* Position the check mark relative to its parent */
-    top: 0; /* Align the check mark to the top of its parent */
-    right: 0; /* Align the check mark to the right of its parent */
-    z-index: 10; /* Ensure the check mark appears above other elements */
-}
+        position: absolute;
+        /* Position the check mark relative to its parent */
+        top: 0;
+        /* Align the check mark to the top of its parent */
+        right: 0;
+        /* Align the check mark to the right of its parent */
+        z-index: 10;
+        /* Ensure the check mark appears above other elements */
+    }
 
 
-        /* Style for the input field */
+    /* Style for the input field */
     .input {
-        margin-top: 1px; /* Adjust spacing between image and input */
-        background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
-        height: 38px; /* Height of input field */
+        margin-top: 1px;
+        /* Adjust spacing between image and input */
+        background-color: rgba(255, 255, 255, 0.5);
+        /* Transparent white background */
+        height: 38px;
+        /* Height of input field */
         width: 100%;
     }
 
     button {
-    margin-left: 12px; /* Adjust margin for spacing */
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
+        margin-left: 12px;
+        /* Adjust margin for spacing */
+        transition: background-color 0.3s ease;
+        /* Smooth transition */
+    }
 
     /* Style for the input field */
     .item input {
-        margin-top: 1px; /* Adjust spacing between image and input */
-        background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
-        border: 0.5px solid #333; /* Border color */
+        margin-top: 1px;
+        /* Adjust spacing between image and input */
+        background-color: rgba(255, 255, 255, 0.5);
+        /* Transparent white background */
+        border: 0.5px solid #333;
+        /* Border color */
         width: 100%;
     }
 
     .input:focus {
-    outline: none; /* Remove default focus outline */
-}
-
-.input:focus::placeholder {
-    color: transparent; /* Hide placeholder text when focused */
-}
-
-.input:focus + .cursor::after {
-    content: "|"; /* Display flashing cursor */
-    animation: cursor-blink 1s infinite; /* Blink animation */
-}
-
-@keyframes cursor-blink {
-    0% {
-        opacity: 1;
+        outline: none;
+        /* Remove default focus outline */
     }
-    50% {
-        opacity: 0;
+
+    .input:focus::placeholder {
+        color: transparent;
+        /* Hide placeholder text when focused */
     }
-    100% {
-        opacity: 1;
+
+    .input:focus+.cursor::after {
+        content: "|";
+        /* Display flashing cursor */
+        animation: cursor-blink 1s infinite;
+        /* Blink animation */
     }
-}
 
-.item-name {
-    position: absolute; /* Position the item name relative to its parent */
-    top: 100%; /* Position the item name below the icons */
-    left: 50%; /* Align the item name to the center horizontally */
-    transform: translateX(-50%); /* Center the item name horizontally */
-    z-index: 20; /* Ensure the item name appears above other elements */
-}
+    @keyframes cursor-blink {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .item-name {
+        position: absolute;
+        /* Position the item name relative to its parent */
+        top: 100%;
+        /* Position the item name below the icons */
+        left: 50%;
+        /* Align the item name to the center horizontally */
+        transform: translateX(-50%);
+        /* Center the item name horizontally */
+        z-index: 20;
+        /* Ensure the item name appears above other elements */
+    }
 
 
-.inventories {
-    display: flex;
-}
-    
+    .inventories {
+        display: flex;
+    }
 </style>
