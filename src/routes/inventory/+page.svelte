@@ -123,7 +123,7 @@ function randomizeItems() {
                         <div class="relative items-center">
                                 <img src="https://oldschool.runescape.wiki/images/{item.image}" class="relative z-10"/>
                                 {#if item.showName}
-                                    <span class="item-name text-red-400 text-xsm absolute bottom-0 left-0 right-0 text-center z-20 font-bold">{item.title}</span>
+                                    <span class="item-name text-red-400 text-xsm absolute bottom-0 left-0 right-0 text-center z-20 font-bold text-pretty">{item.title}</span>
                                 {/if}
                             {#if item.correct === true}
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 absolute top-0 right-0 m-1 answerIcon" viewBox="0 0 20 20" fill="currentColor">
@@ -243,7 +243,7 @@ function randomizeItems() {
 
 .item-name {
     position: absolute; /* Position the item name relative to its parent */
-    bottom: 0; /* Align the item name to the bottom of its parent */
+    top: 100%; /* Position the item name below the icons */
     left: 50%; /* Align the item name to the center horizontally */
     transform: translateX(-50%); /* Center the item name horizontally */
     z-index: 20; /* Ensure the item name appears above other elements */
