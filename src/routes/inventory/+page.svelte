@@ -106,13 +106,11 @@
     }
 
     function giveUp() {
-        console.log("giveUp")
         clearInterval(interval);
         disableInput();
     }
 
     function newGame() {
-        console.log("newGame")
         clearInterval(interval);
         timer = 300;
         formattedTime = formatTime(timer);
