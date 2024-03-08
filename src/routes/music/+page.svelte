@@ -86,6 +86,11 @@
 }
 </script>
 
+<nav class="flex justify-center items-center bg-gray-900">
+    <a href="/" class="text-white hover:text-blue-400 font-bold text-lg mx-2">Home</a>
+    <a href="/music" class="text-blue-400 hover:text-white font-bold text-lg mx-2">Music</a>
+    <a href="/inventory" class="text-white hover:text-blue-400 font-bold text-lg mx-2">Inventory</a>
+</nav>
 <div class="flex flex-col items-center justify-center h-screen bg-gray-900">
     {#if currentSong === null}
     <h1 class="text-4xl text-white font-bold">OSRS - Guess The Song</h1>

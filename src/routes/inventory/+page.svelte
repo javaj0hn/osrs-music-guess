@@ -70,33 +70,14 @@
 
     let randomItems = randomizeItems();
 
-    // function to handle when enter is pressed while in input field
-    function handleEnter(event, item, index) {
-        console.log("Yes")
-        console.log(item)
-
-        if (event.key === 'Enter') {
-
-            // if input equals item name
-            if (event.target.value.toLowerCase() === item.title.toLowerCase()) {
-                randomItems[index].correct = true;
-                event.target.classList.add('hidden');
-            } else {
-                randomItems[index].correct = false;
-                event.target.classList.add('hidden');
-            }
-        }
-        return
-    }
-
     function handleInput(event) {
         const inputText = event.target.value.trim().toLowerCase();
+        // check if user pressed enter or clicked submit button
         if (event.key === 'Enter') {
             for (let i = 0; i < randomItems.length; i++) {
                 const correctTitle = randomItems[i].title.toLowerCase();
                 const cleanCorrectTitle = correctTitle.replace(/\([^)]*\)/g, '').trim(); // Remove parentheses and their content from correct item title
                 const cleanInputText = inputText.replace(/\([^)]*\)/g, '').trim(); // Remove parentheses and their content from input text
-                console.log(cleanInputText, cleanCorrectTitle)
 
                 if (cleanInputText === cleanCorrectTitle || cleanInputText === correctTitle) {
                     randomItems[i].correct = true;
@@ -105,6 +86,45 @@
             }
         }
     }
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        // get input from text input answerInput
+        const inputText = document.getElementById('answerInput').value.trim().toLowerCase();
+
+        for (let i = 0; i < randomItems.length; i++) {
+                const correctTitle = randomItems[i].title.toLowerCase();
+                const cleanCorrectTitle = correctTitle.replace(/\([^)]*\)/g, '').trim(); // Remove parentheses and their content from correct item title
+                const cleanInputText = inputText.replace(/\([^)]*\)/g, '').trim(); // Remove parentheses and their content from input text
+
+                if (cleanInputText === cleanCorrectTitle || cleanInputText === correctTitle) {
+                    randomItems[i].correct = true;
+                    document.getElementById('answerInput').value = ""; // Clear input field on correct answer
+                }
+        }
+        handleInput(event);
+    }
+
+    function giveUp() {
+        console.log("giveUp")
+        clearInterval(interval);
+        disableInput();
+    }
+
+    function newGame() {
+        console.log("newGame")
+        clearInterval(interval);
+        timer = 300;
+        formattedTime = formatTime(timer);
+        startTimer();
+        randomItems = randomizeItems();
+        const inputs = document.querySelectorAll('.input');
+        inputs.forEach(input => {
+            input.disabled = false;
+            input.value = "";
+        });
+    }
+
     // Start the timer when component is mounted
     startTimer();
 
@@ -114,6 +134,11 @@
 
 </script>
 
+<nav class="flex justify-center items-center bg-gray-900">
+    <a href="/" class="text-white hover:text-blue-400 font-bold text-lg mx-2">Home</a>
+    <a href="/music" class="text-white hover:text-blue-400 font-bold text-lg mx-2">Music</a>
+    <a href="/inventory" class="text-blue-400 hover:text-white font-bold text-lg mx-2">Inventory</a>
+</nav>
 <div class="flex flex-col items-center justify-center h-screen bg-gray-900 relative">
     <div class="score text-green-500 text-lg">Score: {randomItems.filter(item => item.correct).length}/28 | Time
         Remaining: {formattedTime}</div>
@@ -144,9 +169,14 @@
         </div>
     </div>
     <div class="flex justify-center mt-4">
-        <input type="text" class="w-1/2 input" on:keydown={event => handleInput(event)} />
-        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" on:click={event => handleEnter(event)}>Submit</button>
+        <input type="text" class="w-1/2 input" id="answerInput" on:keydown={event => handleInput(event)} />
+        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" on:click={event => handleSubmit(event)}>Submit</button>
     </div>
+    <div class="flex mt-4">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-2" on:click={event => newGame()}>New Game</button>
+    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-2" on:click={event => giveUp()}>Give Up!</button>
+    </div>
+
 </div>
 
 
