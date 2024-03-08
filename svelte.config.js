@@ -15,6 +15,9 @@ const config = {
       base: process.env.NODE_ENV === 'production' ? '/osrs-music-guess' : '',
   }
   },
+  prerender: {
+    entries: []
+  },
   preprocess: vitePreprocess()
 };
 export default config;

@@ -1,5 +1,6 @@
 <script>
     import "../app.css";
+    import { base } from '$app/paths'
     import Fa from 'svelte-fa'
     import {
         faArrowsRotate,
@@ -12,7 +13,7 @@
 
 <div class="flex flex-col md:flex-row justify-center items-center h-screen bg-gray-900">
     <div class="md:flex-1 mx-4 my-2 md:my-0 max-w-sm"> <!-- Adjusted max-w-sm to limit panel width on larger screens -->
-        <a href="/inventory">
+        <a href="/osrs-music-guess/inventory">
         <div class="relative">
             <img src="inv_card.png" alt="Background Image" class="w-full h-full object-cover">
             <div class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50">
@@ -22,7 +23,7 @@
         </a>
     </div>
     <div class="md:flex-1 mx-4 my-2 md:my-0 max-w-sm"> <!-- Adjusted max-w-sm to limit panel width on larger screens -->
-        <a href="/music">
+        <a href="/osrs-music-guess/music">
         <div class="relative">
             <img src="music.png" alt="Background Image" class="w-full h-full object-cover">
             <div class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50">

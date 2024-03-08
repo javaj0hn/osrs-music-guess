@@ -2,6 +2,7 @@
     import {
         onDestroy
     } from 'svelte';
+    import { base } from '$app/paths'
     import "../../app.css";
     export let imagePath = "../../static/inven_clean.png";
 
@@ -133,9 +134,9 @@
 </script>
 
 <nav class="flex justify-center items-center bg-gray-900">
-    <a href="/" class="text-white hover:text-blue-400 font-bold text-lg mx-2">Home</a>
-    <a href="/music" class="text-white hover:text-blue-400 font-bold text-lg mx-2">Music</a>
-    <a href="/inventory" class="text-blue-400 hover:text-white font-bold text-lg mx-2">Inventory</a>
+    <a href="/osrs-music-guess" class="text-white hover:text-blue-400 font-bold text-lg mx-2">Home</a>
+    <a href="/osrs-music-guess/music" class="text-white hover:text-blue-400 font-bold text-lg mx-2">Music</a>
+    <a href="/osrs-music-guess/inventory" class="text-blue-400 hover:text-white font-bold text-lg mx-2">Inventory</a>
 </nav>
 <div class="flex flex-col items-center justify-center h-screen bg-gray-900 relative">
     <div class="score text-green-500 text-lg">Score: {randomItems.filter(item => item.correct).length}/28 | Time
