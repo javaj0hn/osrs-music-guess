@@ -112,6 +112,11 @@
     }
 
     function newGame() {
+        // remove correct and showName properties from randomItems
+        randomItems.forEach((item, index) => {
+            delete randomItems[index].correct;
+            delete randomItems[index].showName;
+        });
         clearInterval(interval);
         timer = 300;
         formattedTime = formatTime(timer);
@@ -139,7 +144,7 @@
     <a href="/osrs-music-guess/inventory" class="text-blue-400 hover:text-white font-bold text-lg mx-2">Inventory</a>
 </nav>
 <div class="flex flex-col items-center justify-center h-screen bg-gray-900 relative">
-    <div class="score text-green-500 text-lg">Score: {randomItems.filter(item => item.correct).length}/28 | Time
+    <div class="score text-emerald-500 text-lg font-semibold">Score: {randomItems.filter(item => item.correct).length}/28 | Time
         Remaining: {formattedTime}</div>
     <div class="inventories flex">
         <div class="inventory relative">
@@ -169,11 +174,11 @@
     </div>
     <div class="flex justify-center mt-4">
         <input type="text" class="w-1/2 input" id="answerInput" on:keydown={event => handleInput(event)} />
-        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" on:click={event => handleSubmit(event)}>Submit</button>
+        <button class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded" on:click={event => handleSubmit(event)}>Guess</button>
     </div>
     <div class="flex mt-4">
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-2" on:click={event => newGame()}>New Game</button>
-    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-2" on:click={event => giveUp()}>Give Up!</button>
+    <button class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded ml-2" on:click={event => newGame()}>New Game</button>
+    <button class="bg-rose-500 hover:bg-rose-600 text-white font-bold py-2 px-4 rounded ml-2" on:click={event => giveUp()}>Give Up!</button>
     </div>
 
 </div>

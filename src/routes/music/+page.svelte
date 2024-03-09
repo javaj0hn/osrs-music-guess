@@ -132,11 +132,11 @@
         </datalist>
     </div>
     <div class="mt-4 flex items-center">
-        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center ml-2" on:click={guessSong}>
+        <button class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded flex items-center ml-2" on:click={guessSong}>
             <Fa class="mr-2" icon={faLightbulb} />
             <span>Guess</span>
         </button>
-        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center ml-2" on:click={getRandomSong}>
+        <button class="bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded flex items-center ml-2" on:click={getRandomSong}>
             <Fa class="mr-2" icon={faArrowsRotate} />
             <span>New Song</span>
         </button>
