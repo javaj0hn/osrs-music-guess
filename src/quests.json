@@ -1,0 +1,30 @@
+{
+    "quests": [
+        {
+            "name": "Cook's Assistant",
+            "difficulty": "Easy",
+            "length": "Short",
+            "questPoints": 1,
+            "members": false,
+            "quotes": [
+                "It's the Duke of Lumbridge's birthday and I have to help his Cook make him a birthday cake. To do this I need to bring him the following ingredients:",
+                "I need to find a bucket of milk. There's a cattle field east of Lumbridge, I should make sure I take an empty bucket with me.",
+                "I have found a bucket of milk to give to the cook."
+            ]
+
+        },
+        {
+            "name": "Johns Quest",
+            "difficulty": "Easy",
+            "length": "Short",
+            "questPoints": 1,
+            "members": false,
+            "quotes": [
+                "It's the Duke of Lumbridge's birthday and I have to help his Cook make him a birthday cake. To do this I need to bring him the following ingredients:",
+                "I need to find a bucket of milk. There's a cattle field east of Lumbridge, I should make sure I take an empty bucket with me.",
+                "I have found a bucket of milk to give to the cook."
+            ]
+
+        }
+    ]
+}
