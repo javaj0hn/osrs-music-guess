@@ -1,0 +1,180 @@
+{
+  "quests": [
+    {
+      "title": "Romeo & Juliet",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "5",
+      "series": "N/A",
+      "description": "A young couple's love is threatened by the disapproval of their families, and they must find a way to overcome this obstacle and live happily ever after."
+    },
+    {
+      "title": "Demon Slayer",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "3",
+      "series": "Demon Slayer, #1",
+      "description": "A powerful entity is being conjured to devastate a major metropolis, and you are the chosen individual to prevent it."
+    },
+    {
+      "title": "Shield of Arrav",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "description": "A valuable shield has been stolen from a museum and a group of professional thieves are suspected, and you must track it down and return it to the museum with the help of a friend."
+    },
+    {
+      "title": "Ernest the Chicken",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": "4",
+      "series": "N/A",
+      "description": "A worried individual entered a large, ominous mansion in search of their missing fiancé, who had ventured inside to ask for directions but failed to return after an hour."
+    },
+    {
+      "title": "Vampyre Slayer",
+      "difficulty": "Intermediate",
+      "length": "Very Short",
+      "questPoints": "3",
+      "series": "N/A",
+      "description": "In a small village, the residents are plagued by a malevolent being residing in a nearby mansion, causing their population to decline."
+    },
+    {
+      "title": "Imp Catcher",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "description": "A powerful wizard has conjured numerous mischievous creatures who have pilfered valuable items belonging to another wizard, including their enchanted beads."
+    },
+    {
+      "title": "Prince Ali Rescue",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "3",
+      "series": "Kharidian, #1",
+      "description": "A noble has been taken captive by a cunning woman, and you have been employed to execute a daring rescue operation."
+    },
+    {
+      "title": "Doric's Quest",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "description": "A dwarf with a fondness for anvils requests that you complete a task for him before he allows you to utilize his equipment."
+    },
+    {
+      "title": "Black Knights' Fortress",
+      "difficulty": "Intermediate",
+      "length": "Very Short",
+      "questPoints": "3",
+      "series": "N/A",
+      "description": "You are tasked with infiltrating a group of dark knights and sabotaging their hidden weapon, as their nefarious plans are a threat to the greater good."
+    },
+    {
+      "title": "Witch's Potion",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "description": "Unlock your inner power by brewing a potion with the guidance of a mysterious witch, harnessing the magic within you."
+    },
+    {
+      "title": "Goblin Diplomacy",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": "5",
+      "series": "N/A",
+      "description": "In a village inhabited by mischievous creatures, a conflict arises over the choice of colors to be worn, and it is crucial to mediate the dispute to prevent the world from facing the consequences of angry and unruly goblins."
+    },
+    {
+      "title": "Pirate's Treasure",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": "2",
+      "series": "N/A",
+      "description": "A seasoned pirate possesses the location of a valuable treasure, but only relinquishes the information in exchange for a coveted bottle of exotic liquor."
+    },
+    {
+      "title": "Dragon Slayer I",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Dragonkin, #1",
+      "description": "Defeat the powerful dragon and earn the privilege to purchase and don the Rune platebody."
+    },
+    {
+      "title": "Rune Mysteries",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "Order of Wizards, #1",
+      "description": "Help a wizard in a tower unlock the ancient art of creating runes, and you might learn the secrets of this long-forgotten magic."
+    },
+    {
+      "title": "Misthalin Mystery",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "description": "A grieving woman begs for help in preventing a mysterious assassin from claiming more lives, as her loved one lies dying in front of her."
+    },
+    {
+      "title": "X Marks the Spot",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": "1",
+      "series": "Great Kourend, #1",
+      "description": "A skilled treasure hunter seeks assistance in navigating an unfamiliar region to locate a hidden prize."
+    },
+    {
+      "title": "Below Ice Mountain",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "description": "An archaeologist seeks to uncover ancient ruins, but the entrance is sealed and requires a reunited crew of diverse skills to break in, despite the group's reservations about the archaeologist's intentions."
+    },
+    {
+      "title": "Sheep Shearer",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "description": "A local farmer has a flock of sheep that are in dire need of grooming, and is willing to compensate you for your services."
+    },
+    {
+      "title": "Cook's Assistant",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "description": "The cook at a grand estate is in a bind as they frantically search for ingredients to make a crucial dish for the estate's owner's birthday, with time running out."
+    },
+    {
+      "title": "The Corsair Curse",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": "2",
+      "series": "N/A",
+      "description": "In the southern Feldip Hills, a captain from an unnamed town has sailed to Port Sarim seeking aid for his sick crew, which he believes is cursed due to conflicting tales of ancient relics, vengeful sea creatures, and demonic possession."
+    },
+    {
+      "title": "The Knight's Sword",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "description": "A squire has misplaced their master's ceremonial sword and seeks assistance in obtaining a new one without their master discovering the loss."
+    },
+    {
+      "title": "The Restless Ghost",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "description": "A supernatural entity is terrorizing a cemetery, prompting a religious leader to enlist your assistance in resolving the problem."
+    }
+  ]
+}
