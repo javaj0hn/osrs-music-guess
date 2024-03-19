@@ -91,6 +91,7 @@
     <a href="/" class="text-white hover:text-blue-400 font-bold text-lg mx-2">Home</a>
     <a href="/music" class="text-blue-400 hover:text-white font-bold text-lg mx-2">Music</a>
     <a href="/inventory" class="text-white hover:text-blue-400 font-bold text-lg mx-2">Inventory</a>
+    <a href="/quest" class="text-white hover:text-blue-400 font-bold text-lg mx-2">Quest</a>
 </nav>
 <div class="flex flex-col items-center justify-center h-screen bg-gray-900">
     {#if currentSong === null}
