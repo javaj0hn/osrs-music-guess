@@ -87,12 +87,37 @@
 }
 </script>
 
-<nav class="flex justify-center items-center bg-gray-900">
+<nav class="bg-gray-800">
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+      </div>
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex flex-shrink-0 items-center">
+          <img class="h-8 w-auto" src="snapdragon.png" alt="Taverly Tools">
+        </div>
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="/" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+            <a href="/music" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium">Music</a>
+            <a href="/inventory" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Inventory</a>
+            <a href="/quest" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Quest</a>
+            <a href="/trivia" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Trivia</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- <nav class="flex justify-center items-center bg-gray-900">
     <a href="/" class="text-white hover:text-blue-400 font-bold text-lg mx-2">Home</a>
     <a href="/music" class="text-blue-400 hover:text-white font-bold text-lg mx-2">Music</a>
     <a href="/inventory" class="text-white hover:text-blue-400 font-bold text-lg mx-2">Inventory</a>
     <a href="/quest" class="text-white hover:text-blue-400 font-bold text-lg mx-2">Quest</a>
-</nav>
+    <a href="/trivia" class="text-white hover:text-blue-400 font-bold text-lg mx-2">Trivia</a>
+</nav> -->
 <div class="flex flex-col items-center justify-center h-screen bg-gray-900">
     {#if currentSong === null}
     <h1 class="text-4xl text-white font-bold">OSRS - Guess The Song</h1>

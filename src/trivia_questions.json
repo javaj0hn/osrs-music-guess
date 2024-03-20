@@ -1,0 +1,128 @@
+{
+    "questions": [
+        {
+            "question":"What attack level is required to wield a Ghrazi rapier?",
+            "answer":"80"
+        }, 
+        {
+            "question":"When using a Dragon warhammer special attack, what percentage of defence gets lowered upon a sucessful hit?",
+            "answer":"30"
+        }, 
+        {
+            "question":"What ingredient combines with a buchu leaf to create a prayer enhance in Chambers of Xeric?",
+            "answer":"Stinkhorn mushroom"
+        },
+        {
+            "question":"How much GP is max cash?",
+            "answer":"2,147,483,647"
+        }, 
+        {
+            "question":"What attack level is required to wield a Ghrazi rapier?",
+            "answer":"80"
+        }, 
+        {
+            "question":"When using a Dragon warhammer special attack, what percentage of defence gets lowered upon a sucessful hit?",
+            "answer":"30%"
+        }, 
+        {
+            "question":"What two ingredients are used to create a prayer enhance in Chambers of Xeric?",
+            "answer":"Buchu, Stinkhorn mushroom"
+        }, 
+        {
+            "question":"What level is required to create a Xeric's aid (+) in Chambers of Xeric?",
+            "answer":"78"
+        }, 
+        {
+            "question":"What construction level is required to create a Medium storage unit in Chambers of Xeric?",
+            "answer":"60"
+        }, 
+        {
+            "question":"What level is required to create an Overload (+) in Chambers of Xeric?",
+            "answer":"90"
+        }, 
+        {
+            "question":"What ring regenerates the player's special attack energy twice as fast at 15 seconds per 10%, or 150 seconds per 100%?",
+            "answer":"Lightbearer"
+        }, 
+        {
+            "question":"What item is used on a rune pouch to give it an extra slot to hold 4 types of runes?",
+            "answer":"Thread of elidinis"
+        }, 
+        {
+            "question":"This jewel can be attached to the keris partisan to create the keris partisan of the sun",
+            "answer":"Jewel of the sun"
+        }, 
+        {
+            "question":"How much does a carpet ride cost after the completion of the Rogue trader miniquest?",
+            "answer":"100 gp(coins)"
+        }, 
+        {
+            "question":"What fletching level is required for the Desert elite diary?",
+            "answer":"95"
+        }, 
+        {
+            "question":"What spell is used in the elite Desert diary step?",
+            "answer":"Ice barrage"
+        }, 
+        {
+            "question":"What is the combat level of the Kraken boss?",
+            "answer":"291"
+        }, 
+        {
+            "question":"What Magic level is required to wield a Trident of the seas?",
+            "answer":"75"
+        }, 
+        {
+            "question":"What defence level is required to equip a black mask?",
+            "answer":"10"
+        }, 
+        {
+            "question":"This slayer monster can only be assigned after the quest 'A porcine of Interest'?",
+            "answer":"sourhog"
+        }, 
+        {
+            "question":"Which ranged weapon has the shortest range?",
+            "answer":"Salamander"
+        }, 
+        {
+            "question":"This sword's special attack hits all targets within 1 square of the player.",
+            "answer":"Dragon 2h sword"
+        }, 
+        {
+            "question":"This NPC is a large serpent that lives in the Poison Waste.",
+            "answer":"Zulrah"
+        }, 
+        {
+            "question":"How much GP does it cost to recover your items if you die at Zulrah past 50 KC?",
+            "answer":"100k"
+        }, 
+        {
+            "question":"Located on summit of Mount karuulm, this slayer master requires a combat level of 75 and gives location specific tasks.",
+            "answer":"Konar"
+        }, 
+        {
+            "question":"What is the quest point requirement for Recipe for Disaster?",
+            "answer":"175"
+        }, 
+        {
+            "question":"Introduced in 2024, this rat boss gives some of the best combat experience around.",
+            "answer":"Scurrius"
+        }, 
+        {
+            "question":"This item has a 'Take-from' option, which gives the player one coin each time it is selected.",
+            "answer":"Infinite money bag"
+        }, 
+        {
+            "question":"How much gp does it cost to move your player-owned house to Hosidius?",
+            "answer":"8750"
+        }, 
+        {
+            "question":"This room in your player-owned house costs 100k to build and holds up to 3 teleport portals",
+            "answer":"Portal chamber"
+        }, 
+        {
+            "question":"How much tokkul is rewarded upon completion of the Inferno WITHOUT the elite diary completed?",
+            "answer":"16440"
+        }
+    ]
+}
