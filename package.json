@@ -25,11 +25,17 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@anoram/leaflet-svelte": "^0.0.7-1",
 		"@fortawesome/free-brands-svg-icons": "^6.5.1",
 		"@fortawesome/free-solid-svg-icons": "^6.5.1",
 		"axios": "^1.6.7",
 		"cheerio": "^1.0.0-rc.12",
 		"svelte-fa": "^4.0.2",
 		"svelte-hero-icons": "^5.1.0"
+	},
+	"exports": {
+		".": {
+			"svelte": "./dist/index.js"
+		}
 	}
 }
