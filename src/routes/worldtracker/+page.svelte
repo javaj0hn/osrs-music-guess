@@ -11,7 +11,7 @@
   // Function to fetch population data from the API
   async function fetchPopulations() {
     try {
-      const response = await fetch('http://api.mossgiant.xyz/api/v1/population/osrs');
+      const response = await fetch('https://api.mossgiant.xyz/api/v1/population/osrs');
       const data = await response.json();
       previousPopulations = { ...populations }; // Save previous populations
       populations = data;
