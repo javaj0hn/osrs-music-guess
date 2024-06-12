@@ -2,127 +2,754 @@
     "questions": [
         {
             "question":"What attack level is required to wield a Ghrazi rapier?",
-            "answer":"80"
-        }, 
-        {
-            "question":"When using a Dragon warhammer special attack, what percentage of defence gets lowered upon a sucessful hit?",
-            "answer":"30"
-        }, 
-        {
-            "question":"What ingredient combines with a buchu leaf to create a prayer enhance in Chambers of Xeric?",
-            "answer":"Stinkhorn mushroom"
+            "answers":[{
+                "answer":"80",
+                "isAnswer":true,
+                "showAnswer":false
+            },
+            {
+                "answer":"75",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"70",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"85",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
         },
         {
             "question":"How much GP is max cash?",
-            "answer":"2,147,483,647"
-        }, 
-        {
-            "question":"What attack level is required to wield a Ghrazi rapier?",
-            "answer":"80"
-        }, 
+            "answers":[{
+                "answer":"2,147,663,758",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"2,147,178,647",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"2,147,483,647",
+                "isAnswer":true,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"2,174,663,790",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        },
         {
             "question":"When using a Dragon warhammer special attack, what percentage of defence gets lowered upon a sucessful hit?",
-            "answer":"30%"
-        }, 
-        {
-            "question":"What two ingredients are used to create a prayer enhance in Chambers of Xeric?",
-            "answer":"Buchu, Stinkhorn mushroom"
-        }, 
+            "answers":[{
+                "answer":"80",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"40",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"25",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"30",
+                "isAnswer":true,
+                "showAnswer":false
+            }]
+        },
         {
             "question":"What level is required to create a Xeric's aid (+) in Chambers of Xeric?",
-            "answer":"78"
-        }, 
-        {
-            "question":"What construction level is required to create a Medium storage unit in Chambers of Xeric?",
-            "answer":"60"
-        }, 
-        {
-            "question":"What level is required to create an Overload (+) in Chambers of Xeric?",
-            "answer":"90"
-        }, 
+            "answers":[{
+                "answer":"77",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"81",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"78",
+                "isAnswer":true,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"80",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        },
         {
             "question":"What ring regenerates the player's special attack energy twice as fast at 15 seconds per 10%, or 150 seconds per 100%?",
-            "answer":"Lightbearer"
-        }, 
+            "answers":[{
+                "answer":"Lightbearer",
+                "isAnswer":true,
+                "showAnswer":false
+            },
+            {
+                "answer":"Ring of Attack",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Ring of Life",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Ring of Regeneration",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        },
+        {
+            "question":"What level is required to create an Overload (+) in Chambers of Xeric?",
+            "answers":[{
+                "answer":"90",
+                "isAnswer":true,
+                "showAnswer":false
+            },
+            {
+                "answer":"87",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"91",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"85",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        },
         {
             "question":"What item is used on a rune pouch to give it an extra slot to hold 4 types of runes?",
-            "answer":"Thread of elidinis"
-        }, 
+            "answers":[{
+                "answer":"Jewel of the Sun",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"Thread of Elidinis",
+                "isAnswer":true,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Elidinis' Ward",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Needle and Thread",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        },
         {
-            "question":"This jewel can be attached to the keris partisan to create the keris partisan of the sun",
-            "answer":"Jewel of the sun"
-        }, 
-        {
-            "question":"How much does a carpet ride cost after the completion of the Rogue trader miniquest?",
-            "answer":"100 gp(coins)"
-        }, 
+            "question":"How much gp does a carpet ride cost after the completion of the Rogue trader miniquest?",
+            "answers":[{
+                "answer":"1,000",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"300",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"150",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"100",
+                "isAnswer":true,
+                "showAnswer":false
+            }]
+        },
         {
             "question":"What fletching level is required for the Desert elite diary?",
-            "answer":"95"
-        }, 
+            "answers":[{
+                "answer":"90",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"85",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"95",
+                "isAnswer":true,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"80",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        },
         {
-            "question":"What spell is used in the elite Desert diary step?",
-            "answer":"Ice barrage"
-        }, 
+            "question":"What fletching level is required for the Desert elite diary?",
+            "answers":[{
+                "answer":"90",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"85",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"95",
+                "isAnswer":true,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"80",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        }
+    ],
+    "weaponsQuiz":[
         {
-            "question":"What is the combat level of the Kraken boss?",
-            "answer":"291"
-        }, 
+            "question":"What 60 attack weapon do you have access to buy after Monkey Madness?",
+            "answers":[{
+                "answer":"Dragon dagger",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"Dragon longsword",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Dragon Scimitar",
+                "isAnswer":true,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Dragon crossbow",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        },
         {
-            "question":"What Magic level is required to wield a Trident of the seas?",
-            "answer":"75"
-        }, 
+            "question":"What is the name of the ancient godsword special attack?",
+            "answers":[{
+                "answer":"Blood Sacrifice",
+                "isAnswer":true,
+                "showAnswer":false
+            },
+            {
+                "answer":"Invocate",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Healing Blade",
+                "isAnswer":true,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Rampage",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        },
         {
-            "question":"What defence level is required to equip a black mask?",
-            "answer":"10"
-        }, 
+            "question":"What weapon's special attack transfers 10% of the target's run energy to the user in PvP?",
+            "answers":[{
+                "answer":"Ursine chainmace",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"Abyssal Tentacle",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Dragon Sword",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Abyssal Whip",
+                "isAnswer":true,
+                "showAnswer":false
+            }]
+        },
         {
-            "question":"This slayer monster can only be assigned after the quest 'A porcine of Interest'?",
-            "answer":"sourhog"
-        }, 
+            "question":"What NPC can drop an ancient staff at a 1/128 drop chance?",
+            "answers":[{
+                "answer":"Thermonuclear smoke devil",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"Chaos Fanatic",
+                "isAnswer":true,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Calvar'ion",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Mummy",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        },
         {
-            "question":"Which ranged weapon has the shortest range?",
-            "answer":"Salamander"
-        }, 
+            "question":"What are the four 'combat styles' for a pickaxe?",
+            "answers":[{
+                "answer":"Spike, Impale, Smash, Block",
+                "isAnswer":true,
+                "showAnswer":false
+            },
+            {
+                "answer":"Spike, Impale, Crush, Block",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Spike, Pound, Crush, Block",
+                "isAnswer":true,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Pummel, Pound, Crush, Smash",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        },
         {
-            "question":"This sword's special attack hits all targets within 1 square of the player.",
-            "answer":"Dragon 2h sword"
-        }, 
+            "question":"How much will Nulodian sell an individual part of a cannon for?",
+            "answers":[{
+                "answer":"187,500",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"185,225",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"200,625",
+                "isAnswer":true,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"190,200",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        },
         {
-            "question":"This NPC is a large serpent that lives in the Poison Waste.",
-            "answer":"Zulrah"
-        }, 
+            "question":"What is the melee strength bonus of a dragonfire shield?",
+            "answers":[{
+                "answer":"7",
+                "isAnswer":true,
+                "showAnswer":false
+            },
+            {
+                "answer":"9",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"6",
+                "isAnswer":true,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"5",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        },
         {
-            "question":"How much GP does it cost to recover your items if you die at Zulrah past 50 KC?",
-            "answer":"100k"
-        }, 
+            "question":"What attack level is required to wield a Staff of Light",
+            "answers":[{
+                "answer":"65",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"80",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"70",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"75",
+                "isAnswer":true,
+                "showAnswer":false
+            }]
+        },
         {
-            "question":"Located on summit of Mount karuulm, this slayer master requires a combat level of 75 and gives location specific tasks.",
-            "answer":"Konar"
-        }, 
+            "question":"What unique weapon drops from armoured zombies at a 1/800 rate?",
+            "answers":[{
+                "answer":"Dragon spear",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"Zombie blade",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Dragon sword",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Broken zombie axe",
+                "isAnswer":true,
+                "showAnswer":false
+            }]
+        },
         {
-            "question":"What is the quest point requirement for Recipe for Disaster?",
-            "answer":"175"
-        }, 
+            "question":"Along with wearing red d'hide chaps, what weapon do you need to wield to complete the double agent's 'Spin Inside West Ardougne Church' elite clue scroll step?",
+            "answers":[{
+                "answer":"Dragon longsword",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"Dragon spear",
+                "isAnswer":true,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Dragon hasta",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Dragon battleaxe",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        },
         {
-            "question":"Introduced in 2024, this rat boss gives some of the best combat experience around.",
-            "answer":"Scurrius"
-        }, 
+            "question":"What magic level is required to wield a Kodai wand?",
+            "answers":[{
+                "answer":"80",
+                "isAnswer":true,
+                "showAnswer":false
+            },
+            {
+                "answer":"75",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"70",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"85",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        },
         {
-            "question":"This item has a 'Take-from' option, which gives the player one coin each time it is selected.",
-            "answer":"Infinite money bag"
-        }, 
+            "question":"What weapon has a 1/2,001 drop rate from the Alchemical Hydra?",
+            "answers":[{
+                "answer":"Dragon thrownaxe",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"Dragon knife",
+                "isAnswer":true,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Hydra's claw",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Rune 2h sword",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        },
         {
-            "question":"How much gp does it cost to move your player-owned house to Hosidius?",
-            "answer":"8750"
-        }, 
+            "question":"What weapon can you smith at 99 smithing?",
+            "answers":[{
+                "answer":"Rune claws",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"Rune battleaxe",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Rune 2h sword",
+                "isAnswer":true,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Rune scimitar",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        },
         {
-            "question":"This room in your player-owned house costs 100k to build and holds up to 3 teleport portals",
-            "answer":"Portal chamber"
-        }, 
+            "question":"What crossbow drops from Commander Zilyana?",
+            "answers":[{
+                "answer":"Dragon hunter crossbow",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"Saradomin crossbow",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Zaryte crossbow",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Armdayl crossbow",
+                "isAnswer":true,
+                "showAnswer":false
+            }]
+        },
         {
-            "question":"How much tokkul is rewarded upon completion of the Inferno WITHOUT the elite diary completed?",
-            "answer":"16440"
+            "question":"What are the three pieces required to make an Abyssal Bludgeon",
+            "answers":[{
+                "answer":"Bludgeon axon, Bludgeon claw, Bludgeon spine",
+                "isAnswer":true,
+                "showAnswer":false
+            },
+            {
+                "answer":"Bludgeon head, Bludgeon body, Bludgeon legs",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Bludgeon spike, Bludgeon handle, Bludgeon tail",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Bludgeon head, Bludgeon spine, Bludgeon claw",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        },
+        {
+            "question":"If you lose your Lunar staff, how much will a new one from the Oneiromancer cost you?",
+            "answers":[{
+                "answer":"60,000",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"30,000",
+                "isAnswer":true,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"45,000",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"50,000",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        },
+        {
+            "question":"How many crystal shards does it take to corrupt a Blade of Saeldor",
+            "answers":[{
+                "answer":"1,500",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"2,000",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"500",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"1,000",
+                "isAnswer":true,
+                "showAnswer":false
+            }]
+        },
+        {
+            "question":"What broken weapon is a reward from the quest, The Great Brain Robbery",
+            "answers":[{
+                "answer":"Barrelchest anchor",
+                "isAnswer":true,
+                "showAnswer":false
+            },
+            {
+                "answer":"Dragon longsword",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Dragon crossbow",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"Black salamander",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        },
+        {
+            "question":"What speed does the ham joint attack at?",
+            "answers":[{
+                "answer":"2 tick",
+                "isAnswer":false,
+                "showAnswer":false
+            },
+            {
+                "answer":"4 tick",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"3 tick",
+                "isAnswer":true,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"5 tick",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
+        },
+        {
+            "question":"What slash bonus does the zombie axe give?",
+            "answers":[{
+                "answer":"105",
+                "isAnswer":true,
+                "showAnswer":false
+            },
+            {
+                "answer":"85",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"100",
+                "isAnswer":false,
+                "showAnswer":false
+
+            },
+            {
+                "answer":"90",
+                "isAnswer":false,
+                "showAnswer":false
+            }]
         }
     ]
 }
