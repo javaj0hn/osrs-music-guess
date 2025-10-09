@@ -1,0 +1,179 @@
+{
+    "locations": [
+        {
+            "location": "Lumbridge - South Tower Entrance",
+            "position": [3228, 3214],
+            "image": "https://files.catbox.moe/75xren.png"
+        },
+        {
+            "location": "North Edgeville",
+            "position": [3080, 3502],
+            "image": "https://files.catbox.moe/jb31lb.png"
+        },
+        {
+            "location": "South Alkharid",
+            "position": [3299, 3162],
+            "image": "https://files.catbox.moe/55c1i7.png"
+        },
+        {
+            "location": "Karamja",
+            "position": [2096, 3176],
+            "image": "https://files.catbox.moe/f4sj53.png"
+        },
+        {
+            "location": "Draynor",
+            "position": [3116, 3277],
+            "image": "https://files.catbox.moe/rfzit5.png"
+        },
+        {
+            "location": "Wintertodt",
+            "position": [1624, 3939],
+            "image": "https://files.catbox.moe/irx798.png"
+        },
+        {
+            "location": "Barbarian Outpost",
+            "position": [2524, 3589],
+            "image": "https://files.catbox.moe/8j6jkn.png"
+        },
+        {
+            "location": "Castle Wars",
+            "position": [2448, 3090],
+            "image": "https://files.catbox.moe/lq0c7s.png"
+        },
+        {
+            "location": "Ardy",
+            "position": [2658, 3303],
+            "image": "https://files.catbox.moe/rrgl6l.png"
+        },
+        {
+            "location": "Camelot Castle",
+            "position": [2761, 3501],
+            "image": "https://files.catbox.moe/77nn7n.png"
+        },
+        {
+            "location": "Falador",
+            "position": [2974, 3371],
+            "image": "https://files.catbox.moe/n3u881.png"
+        },
+        {
+            "location": "Fremennik Province - House Portal",
+            "position": [2670, 3634],
+            "image": "https://files.catbox.moe/6mhkej.png"
+        },
+        {
+            "location": "Blue Moon Inn",
+            "position": [3230, 3400],
+            "image": "https://files.catbox.moe/xlxc8t.png"
+        },
+        {
+            "location": "East Of Camelot",
+            "position": [2789, 3487],
+            "image": "https://files.catbox.moe/03auwy.png"
+        },
+        {
+            "location": "West Nardah",
+            "position": [3399, 2916],
+            "image": "https://files.catbox.moe/44i6tb.png"
+        },
+        {
+            "location": "East of Jolly Boar Inn",
+            "position": [3288, 3489],
+            "image": "https://files.catbox.moe/b3xrhx.png"
+        },
+        {
+            "location": "Piscatoris",
+            "position": [2337, 3641],
+            "image": "https://files.catbox.moe/dsovsi.png"
+        },
+        {
+            "location": "Feldip Hills",
+            "position": [2551, 2877],
+            "image": "https://files.catbox.moe/duuhkn.png"
+        },
+        {
+            "location": "Mort'ton",
+            "position": [3492, 3288],
+            "image": "https://files.catbox.moe/t47mds.png"
+        },
+        {
+            "location": "North East Chaos Alter",
+            "position": [3255, 3653],
+            "image": "https://files.catbox.moe/13g8ln.png"
+        },
+        {
+            "location": "Wilderness - Bone Yard",
+            "position": [3227, 3730],
+            "image": "https://files.catbox.moe/m8s2dy.png"
+        },
+        {
+            "location": "North West - Monestary",
+            "position": [3046, 3498],
+            "image": "https://files.catbox.moe/lshne7.png"
+        },
+        {
+            "location": "North East - Falador",
+            "position": [3022, 3420],
+            "image": "https://files.catbox.moe/47v3fp.png"
+        },
+        {
+            "location": "Observatory",
+            "position": [2451, 3172],
+            "image": "https://files.catbox.moe/am00z1.png"
+        },
+        {
+            "location": "Burthrope Pub",
+            "position": [2911, 3540],
+            "image": "https://files.catbox.moe/s25nqu.png"
+        },
+        {
+            "location": "Apothecary - Warriors' Guild",
+            "position": [2845, 3549],
+            "image": "https://files.catbox.moe/vr9t2h.png"
+        },
+        {
+            "location": "Guthix Altar - North East Taverley",
+            "position": [2925, 3482],
+            "image": "https://files.catbox.moe/b7xs4l.png"
+        },
+        {
+            "location": "Catherby Docks",
+            "position": [2803, 3423],
+            "image": "https://files.catbox.moe/l68v4e.png"
+        },
+        {
+            "location": "Catherby Fishing Store",
+            "position": [2833, 3446],
+            "image": "https://files.catbox.moe/utx0yx.png"
+        },
+        {
+            "location": "Ardougne Altar",
+            "position": [2618, 3308],
+            "image": "https://files.catbox.moe/rx9pji.png"
+        },
+        {
+            "location": "Ardougne Furnace",
+            "position": [2601, 3311],
+            "image": "https://files.catbox.moe/uuguq8.png"
+        },
+        {
+            "location": "Oziachs' Store - North Edgeville",
+            "position": [3068, 3517],
+            "image": "https://files.catbox.moe/eoz0vx.png"
+        },
+        {
+            "location": "Chaos Temple",
+            "position": [2933, 3514],
+            "image": "https://files.catbox.moe/ooo7vg.png"
+        },
+        {
+            "location": "Lumbridge Swamp",
+            "position": [3230, 3183],
+            "image": "https://files.catbox.moe/pda912.png"
+        },
+        {
+            "location": "Falador Castle",
+            "position": [2990, 3337],
+            "image": "https://files.catbox.moe/7l71dh.png"
+        }
+    ]
+}

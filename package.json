@@ -25,11 +25,16 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@anoram/leaflet-svelte": "^0.0.7-1",
 		"@fortawesome/free-brands-svg-icons": "^6.5.1",
 		"@fortawesome/free-solid-svg-icons": "^6.5.1",
 		"axios": "^1.6.7",
 		"cheerio": "^1.0.0-rc.12",
+		"leaflet": "^1.9.4",
+		"leaflet-edgebuffer": "^1.0.6",
+		"node-fetch": "^3.3.2",
 		"svelte-fa": "^4.0.2",
-		"svelte-hero-icons": "^5.1.0"
+		"svelte-hero-icons": "^5.1.0",
+		"svelte-leafletjs": "^1.2.0"
 	}
 }

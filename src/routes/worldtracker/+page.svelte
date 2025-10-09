@@ -63,31 +63,6 @@
   });
 </script>
 
-<nav class="bg-gray-800">
-  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div class="relative flex h-16 items-center justify-between">
-      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-      </div>
-      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-        <div class="flex flex-shrink-0 items-center">
-          <img class="h-8 w-auto" src="snapdragon.png" alt="Taverly Tools">
-        </div>
-        <div class="hidden sm:ml-6 sm:block">
-          <div class="flex space-x-4">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="/" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-            <a href="/music" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Music</a>
-            <a href="/inventory" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Inventory</a>
-            <a href="/quest" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Quest</a>
-            <a href="/trivia" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Trivia</a>
-            <a href="/worldtracker" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium">World Tracker</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
-
 <div class="flex flex-col items-center justify-center min-h-screen bg-gray-900">
   <h1 class="text-4xl text-white">World Tracker</h1>
   <div class="border-collapse border border-gray-800 p-4 mt-4 flex flex-wrap justify-between mb-2">

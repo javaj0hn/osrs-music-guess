@@ -1,196 +1,298 @@
 <script>
     import "../../app.css";
-
     import quests from "../../quests.json";
 
     let randomQuest = getQuestion();
     let userStatus;
+    let showLength = false;
+    let showMembers = false;
+    let showDifficulty = false;
+    let showQuestPoints = false;
+    let userInput = "";
+    let filteredQuests = [];
+    let selectedIndex = -1;
 
     function getRandomQuest() {
         return quests.quests[Math.floor(Math.random() * quests.quests.length)];
     }
 
     function getRandomQuote(quest) {
-        console.log(quest)
-        console.log(quest.quotes[Math.floor(Math.random() * quest.quotes.length)])
+        console.log(quest);
+        console.log(quest.quotes[Math.floor(Math.random() * quest.quotes.length)]);
         return quest.quotes[Math.floor(Math.random() * quest.quotes.length)];
     }
 
     function getQuestion() {
         let quest = getRandomQuest();
-        //let quote = getRandomQuote(quest);
-        return {
-            quest: quest,
-            //quote: quote
-        };
+        return { quest };
     }
 
     function newQuest() {
         userStatus = undefined;
-        document.querySelector("#userInput").value = "";
+        userInput = "";
+        filteredQuests = [];
+        selectedIndex = -1;
         randomQuest = getQuestion();
     }
 
     function guess() {
-        let answer = document.querySelector("#userInput").value;
-        console.log(answer)
-        console.log(randomQuest.quest.title)
-        if (answer.toLowerCase() === randomQuest.quest.title.toLowerCase()) {
+        console.log(userInput);
+        console.log(randomQuest.quest.title);
+        
+        if (userInput.toLowerCase() === randomQuest.quest.title.toLowerCase()) {
             console.log("Correct!");
             userStatus = true;
         } else {
-            userStatus = false;
             console.log("Incorrect!");
+            userStatus = false;
+        }
+        filteredQuests = [];
+        selectedIndex = -1;
+    }
+
+    function handleInput() {
+        selectedIndex = -1;
+        if (userInput.length < 2) {
+            filteredQuests = [];
+            return;
+        }
+        
+        const searchTerm = userInput.toLowerCase();
+        filteredQuests = quests.quests
+            .filter(quest => quest.title.toLowerCase().includes(searchTerm))
+            .slice(0, 10)
+            .map(quest => quest.title);
+    }
+
+    function selectQuest(questTitle) {
+        userInput = questTitle;
+        filteredQuests = [];
+        selectedIndex = -1;
+    }
+
+    function handleKeydown(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            if (filteredQuests.length > 0 && selectedIndex >= 0) {
+                selectQuest(filteredQuests[selectedIndex]);
+            } else {
+                guess();
+            }
+            return;
+        }
+
+        if (filteredQuests.length === 0) return;
+
+        if (event.key === 'ArrowDown') {
+            event.preventDefault();
+            selectedIndex = (selectedIndex + 1) % filteredQuests.length;
+        } else if (event.key === 'ArrowUp') {
+            event.preventDefault();
+            selectedIndex = selectedIndex <= 0 ? filteredQuests.length - 1 : selectedIndex - 1;
+        } else if (event.key === 'Escape') {
+            filteredQuests = [];
+            selectedIndex = -1;
         }
     }
 
-    function toggleInput(event) {
-        var labelValue = document.getElementById(event.target.id + "Value");
-        labelValue.style.visibility = event.target.checked ? "visible" : "hidden";
+    function getDifficultyColor(difficulty) {
+        const colorMap = {
+            'Novice': 'text-green-300',
+            'Intermediate': 'text-yellow-300',
+            'Experienced': 'text-orange-300',
+            'Master': 'text-red-300',
+            'Grandmaster': 'text-purple-300',
+            'Special': 'text-blue-300'
+        };
+        return colorMap[difficulty] || 'text-white';
     }
 
+    function getQuestPointsColor(points) {
+        const colorMap = {
+            1: 'text-green-300',
+            2: 'text-yellow-300',
+            3: 'text-orange-300',
+            4: 'text-red-300',
+            5: 'text-purple-300',
+            6: 'text-blue-300',
+            10: 'text-pink-300'
+        };
+        return colorMap[points] || 'text-white';
+    }
 </script>
 
-<nav class="bg-gray-800">
-  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div class="relative flex h-16 items-center justify-between">
-      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-      </div>
-      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-        <div class="flex flex-shrink-0 items-center">
-          <img class="h-8 w-auto" src="snapdragon.png" alt="Taverly Tools">
-        </div>
-        <div class="hidden sm:ml-6 sm:block">
-          <div class="flex space-x-4">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="/" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-            <a href="/music" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Music</a>
-            <a href="/inventory" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Inventory</a>
-            <a href="/quest" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium">Quest</a>
-            <a href="/trivia" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Trivia</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
-
-<div class="flex flex-col items-center justify-center h-screen bg-gray-900">
-    <h1 class="text-white text-4xl font-bold mb-4">Quest Guesser</h1>
-    <div class="flex flex-col items-center justify-center bg-gray-800 p-4 rounded-lg">
+<div class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-4">
+    <h1 class="text-white text-5xl font-bold mb-8 text-center drop-shadow-lg">Quest Guesser</h1>
+    
+    <div class="flex flex-col items-center justify-center bg-gray-800 p-6 rounded-xl shadow-2xl max-w-3xl w-full border border-gray-700">
         {#if userStatus === true}
-        <h2 class="text-green-300 text-2xl font-bold mb-4">Correct!</h2>
+            <div class="text-green-400 text-2xl font-bold mb-6 bg-green-900/30 px-6 py-3 rounded-lg border-2 border-green-500 animate-pulse">
+                ✓ Correct!
+            </div>
+        {:else if userStatus === false}
+            <div class="text-red-400 text-2xl font-bold mb-6 bg-red-900/30 px-6 py-3 rounded-lg border-2 border-red-500">
+                ✗ Incorrect!
+            </div>
         {/if}
-        {#if userStatus === false}
-        <h2 class="text-red-300 text-2xl font-bold mb-4">Incorrect!</h2>
-        {/if}
-        <h2 class="text-white text-2xl font-bold mb-4">{randomQuest.quest.description}</h2>
-        <table class="table-fixed">
-            <tbody>
+        
+        <div class="bg-gray-700/50 p-4 rounded-lg mb-6 w-full border border-gray-600">
+            <h2 class="text-white text-xl font-semibold leading-relaxed text-center">{randomQuest.quest.description}</h2>
+        </div>
+        
+        <div class="bg-gray-750 p-4 rounded-lg w-full mb-6 border border-gray-600">
+            <h3 class="text-gray-400 text-sm font-semibold mb-3 uppercase tracking-wide">Quest Hints</h3>
+            <table class="table-fixed w-full">
+                <tbody>
                 <tr>
-                    <td class="px-4 py-2 text-white font-semibold">Length</td>
-                    <td class="px-4 py-2 input-column">
+                    <td class="px-4 py-3 text-gray-300 font-medium">Length</td>
+                    <td class="px-4 py-3 input-column">
                         <label for="questlength">
-                            <input id="questlength" type="checkbox" on:change={toggleInput} />
+                            <input id="questlength" type="checkbox" bind:checked={showLength} />
                         </label>
                     </td>
-                    <td id="questlengthValue" class="px-4 py-2 text-purple-300 font-semibold" style="visibility: hidden;">{randomQuest.quest.length}</td>
-                </tr>
-                <tr>
-                    <td class="px-4 py-2 text-white font-semibold">Members</td>
-                    <td class="px-4 py-2 input-column">
-                        <label for="members">
-                            <input id="members" type="checkbox" on:change={toggleInput} />
-                        </label>
-                    </td>
-                    <td id="membersValue" class="px-4 py-2 text-white font-semibold" style="visibility: hidden;">
-                        {#if randomQuest.quest.members === true}
-                        <span class="text-green
-                        -300">Yes</span>
+                    <td class="px-4 py-3 text-purple-400 font-semibold min-w-[100px]">
+                        {#if showLength}
+                            {randomQuest.quest.length}
                         {:else}
-                        <span class="text-red-300">No</span>
+                            <span class="text-gray-600">---</span>
                         {/if}
                     </td>
                 </tr>
-                <tr>
-                    <td class="px-4 py-2 text-white font-semibold">Difficulty</td>
-                    <td class="px-4 py-2 input-column">
-                        <label for="questdifficulty">
-                            <input id="questdifficulty" type="checkbox" on:change={toggleInput} />
+                
+                <tr class="border-t border-gray-700">
+                    <td class="px-4 py-3 text-gray-300 font-medium">Members</td>
+                    <td class="px-4 py-3 input-column">
+                        <label for="members">
+                            <input id="members" type="checkbox" bind:checked={showMembers} />
                         </label>
                     </td>
-                    <td id="questdifficultyValue" class="px-4 py-2 font-semibold" style="visibility: hidden;"
-                    class:text-green-300={randomQuest.quest.difficulty === 'Novice'}
-                    class:text-yellow-300={randomQuest.quest.difficulty === 'Intermediate'}
-                    class:text-orange-300={randomQuest.quest.difficulty === 'Experienced'}
-                    class:text-red-300={randomQuest.quest.difficulty === 'Master'}
-                    class:text-purple-300={randomQuest.quest.difficulty === 'Grandmaster'}
-                    class:text-blue-300={randomQuest.quest.difficulty === 'Special'}>{randomQuest.quest.difficulty}</td>
+                    <td class="px-4 py-3 font-semibold min-w-[100px]">
+                        {#if showMembers}
+                            {#if randomQuest.quest.members}
+                                <span class="text-green-400">Yes</span>
+                            {:else}
+                                <span class="text-red-400">No</span>
+                            {/if}
+                        {:else}
+                            <span class="text-gray-600">---</span>
+                        {/if}
+                    </td>
                 </tr>
-                <tr>
-                    <td class="px-4 py-2 text-white font-semibold">Quest Points</td>
-                    <td class="px-4 py-2 input-column">
-                        <label for="questpoints">
-                            <input id="questpoints" type="checkbox" on:change={toggleInput} />
+                
+                <tr class="border-t border-gray-700">
+                    <td class="px-4 py-3 text-gray-300 font-medium">Difficulty</td>
+                    <td class="px-4 py-3 input-column">
+                        <label for="questdifficulty">
+                            <input id="questdifficulty" type="checkbox" bind:checked={showDifficulty} />
                         </label>
                     </td>
-                    <td id="questpointsValue" class="px-4 py-2 font-semibold" style="visibility: hidden;"
-                    class:text-green-300={randomQuest.quest.questPoints === 1}
-                    class:text-yellow-300={randomQuest.quest.questPoints === 2}
-                    class:text-orange-300={randomQuest.quest.questPoints === 3}
-                    class:text-red-300={randomQuest.quest.questPoints === 4}
-                    class:text-purple-300={randomQuest.quest.questPoints === 5}
-                    class:text-blue-300={randomQuest.quest.questPoints === 6}
-                    class:text-pink-300={randomQuest.quest.questPoints === 10}>{randomQuest.quest.questPoints}</td>
+                    <td class="px-4 py-3 font-semibold min-w-[100px]">
+                        {#if showDifficulty}
+                            <span class={getDifficultyColor(randomQuest.quest.difficulty)}>
+                                {randomQuest.quest.difficulty}
+                            </span>
+                        {:else}
+                            <span class="text-gray-600">---</span>
+                        {/if}
+                    </td>
+                </tr>
+                
+                <tr class="border-t border-gray-700">
+                    <td class="px-4 py-3 text-gray-300 font-medium">Quest Points</td>
+                    <td class="px-4 py-3 input-column">
+                        <label for="questpoints">
+                            <input id="questpoints" type="checkbox" bind:checked={showQuestPoints} />
+                        </label>
+                    </td>
+                    <td class="px-4 py-3 font-semibold min-w-[100px]">
+                        {#if showQuestPoints}
+                            <span class={getQuestPointsColor(randomQuest.quest.questPoints)}>
+                                {randomQuest.quest.questPoints}
+                            </span>
+                        {:else}
+                            <span class="text-gray-600">---</span>
+                        {/if}
+                    </td>
                 </tr>
             </tbody>
         </table>
-        <div>
-        <input type="text" id="userInput" class="bg-gray-700 text-white font-semibold p-2 rounded-lg mt-4" placeholder="Enter your answer" />
-        <button class="bg-blue-400 hover:bg-blue-700 text-white font-semibold p-2 rounded-lg mt-4" on:click={guess}>Guess</button>
-        <button class="bg-purple-400 hover:bg-purple-700 text-white font-semibold p-2 rounded-lg mt-4" on:click={newQuest}>New Quest</button>
+        </div>
+        
+        <div class="w-full mt-6">
+            <label for="userInput" class="text-gray-100 text-sm font-bold mb-6 block uppercase tracking-wide">Your Answer</label>
+            <div class="relative">
+                <input 
+                    type="text" 
+                    bind:value={userInput}
+                    on:input={handleInput}
+                    on:keydown={handleKeydown}
+                    class="bg-gray-700 text-white font-semibold p-3 rounded-lg w-full border-2 border-gray-600 focus:border-blue-500 focus:outline-none transition-colors" 
+                    placeholder="Start typing a quest name..."
+                    autocomplete="off"
+                />
+                
+                {#if filteredQuests.length > 0}
+                    <div class="absolute top-full left-0 mt-2 bg-gray-700 rounded-lg shadow-2xl max-h-60 overflow-y-auto z-10 w-full border-2 border-gray-600">
+                        {#each filteredQuests as quest, index}
+                            <button 
+                                class="w-full text-left px-4 py-3 text-white transition-colors border-b border-gray-600 last:border-b-0 {index === selectedIndex ? 'bg-blue-600' : 'hover:bg-gray-600'}"
+                                on:click={() => selectQuest(quest)}>
+                                {quest}
+                            </button>
+                        {/each}
+                    </div>
+                {/if}
+            </div>
+            
+            <div class="flex gap-3 mt-4">
+                <button 
+                    class="flex-1 bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105 shadow-lg" 
+                    on:click={guess}>
+                    Guess
+                </button>
+                <button 
+                    class="flex-1 bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105 shadow-lg" 
+                    on:click={newQuest}>
+                    New Quest
+                </button>
+            </div>
         </div>
     </div>
 </div>
 
 <style>
     @tailwind base;
-@tailwind components;
-@tailwind utilities;
+    @tailwind components;
+    @tailwind utilities;
 
-@layer base {
-  label {
-    @apply relative inline-block h-6;
-  }
+    @layer base {
+        label {
+            @apply relative inline-block h-6 w-11;
+        }
 
-  [type="checkbox"] {
-    @apply inline-block h-0 w-11 cursor-pointer;
-    @apply focus:outline-0 dark:focus:outline-0;
-    @apply border-0 dark:border-0;
-    @apply focus:ring-offset-transparent dark:focus:ring-offset-transparent;
-    @apply focus:ring-transparent dark:focus:ring-transparent;
-    @apply focus-within:ring-0 dark:focus-within:ring-0;
-    @apply focus:shadow-none dark:focus:shadow-none;
+        [type="checkbox"] {
+            @apply appearance-none h-6 w-11 cursor-pointer relative;
+            @apply focus:outline-0;
+            @apply border-0;
+            @apply focus:ring-0;
+            @apply bg-gray-600 rounded-full;
+            @apply transition-colors duration-300;
+        }
 
-    @apply before:absolute after:absolute;
-    @apply before:top-0 after:top-0;
-    @apply before:inline-block after:block;
-    @apply before:rounded-full after:rounded-full;
+        [type="checkbox"]:checked {
+            @apply bg-lime-500;
+        }
 
-    @apply after:ml-0.5 after:mt-0.5 after:h-5 after:w-5 after:content-[''];
-    @apply after:shadow-md after:duration-100;
+        [type="checkbox"]::after {
+            content: '';
+            @apply absolute top-0.5 left-0.5;
+            @apply h-5 w-5 bg-white rounded-full;
+            @apply shadow-md;
+            @apply transition-transform duration-300;
+        }
 
-    @apply before:h-full before:w-10 before:content-[''];
-    @apply before:shadow-[inset_0_0_#000];
-
-    @apply after:bg-white dark:after:bg-gray-50;
-    @apply before:bg-gray-300 dark:before:bg-gray-600;
-    @apply before:checked:bg-lime-500 dark:before:checked:bg-lime-500;
-    @apply checked:after:translate-x-4 checked:after:duration-300;
-
-    @apply disabled:cursor-not-allowed disabled:after:bg-opacity-75;
-    @apply disabled:checked:before:bg-opacity-40;
-  }
-}
-
-    </style>
+        [type="checkbox"]:checked::after {
+            @apply translate-x-5;
+        }
+    }
+</style>

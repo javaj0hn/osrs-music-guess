@@ -1,20 +1,40 @@
 {
   "quests": [
     {
-      "title": "Romeo & Juliet",
+      "title": "Cook's Assistant",
       "difficulty": "Novice",
       "length": "Short",
-      "questPoints": "5",
+      "questPoints": "1",
       "series": "N/A",
-      "description": "A young couple's love is threatened by the disapproval of their families, and they must find a way to overcome this obstacle and live happily ever after."
+      "members": false,
+      "description": "A castle chef has forgotten crucial ingredients for an important celebration cake and needs your assistance gathering them before time runs out."
     },
     {
       "title": "Demon Slayer",
       "difficulty": "Novice",
       "length": "Short",
       "questPoints": "3",
-      "series": "Demon Slayer, #1",
+      "series": "N/A",
+      "members": false,
       "description": "A powerful entity is being conjured to devastate a major metropolis, and you are the chosen individual to prevent it."
+    },
+    {
+      "title": "Romeo & Juliet",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "5",
+      "series": "N/A",
+      "members": false,
+      "description": "A young couple's love is threatened by the disapproval of their families, and they must find a way to overcome this obstacle and live happily ever after."
+    },
+    {
+      "title": "Sheep Shearer",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": false,
+      "description": "A farmer needs a large quantity of wool collected and is willing to reward anyone who can help gather the necessary materials."
     },
     {
       "title": "Shield of Arrav",
@@ -22,23 +42,26 @@
       "length": "Short",
       "questPoints": "1",
       "series": "N/A",
-      "description": "A valuable shield has been stolen from a museum and a group of professional thieves are suspected, and you must track it down and return it to the museum with the help of a friend."
+      "members": false,
+      "description": "A legendary artifact has been broken into pieces by rival criminal organizations, and you must work with another adventurer to recover both halves."
     },
     {
       "title": "Ernest the Chicken",
       "difficulty": "Novice",
-      "length": "Very Short",
+      "length": "Short",
       "questPoints": "4",
       "series": "N/A",
-      "description": "A worried individual entered a large, ominous mansion in search of their missing fiancé, who had ventured inside to ask for directions but failed to return after an hour."
+      "members": false,
+      "description": "A woman's fiancé has gone missing in a mysterious manor, and you must navigate its bizarre contraptions to rescue him from his peculiar predicament."
     },
     {
-      "title": "Vampyre Slayer",
-      "difficulty": "Intermediate",
-      "length": "Very Short",
+      "title": "Vampire Slayer",
+      "difficulty": "Novice",
+      "length": "Short",
       "questPoints": "3",
       "series": "N/A",
-      "description": "In a small village, the residents are plagued by a malevolent being residing in a nearby mansion, causing their population to decline."
+      "members": false,
+      "description": "A dangerous creature of the night threatens a local settlement, and you must obtain the proper tools to vanquish this supernatural menace."
     },
     {
       "title": "Imp Catcher",
@@ -46,119 +69,44 @@
       "length": "Short",
       "questPoints": "1",
       "series": "N/A",
-      "description": "A powerful wizard has conjured numerous mischievous creatures who have pilfered valuable items belonging to another wizard, including their enchanted beads."
+      "members": false,
+      "description": "A wizard has lost his collection of magical beads and needs you to recover them from mischievous creatures scattered across the land."
     },
     {
       "title": "Prince Ali Rescue",
       "difficulty": "Novice",
       "length": "Short",
       "questPoints": "3",
-      "series": "Kharidian, #1",
-      "description": "A noble has been taken captive by a cunning woman, and you have been employed to execute a daring rescue operation."
+      "series": "N/A",
+      "members": false,
+      "description": "Royalty has been kidnapped and held for ransom, and you must orchestrate an elaborate escape plan to free them from their captors."
     },
     {
       "title": "Doric's Quest",
       "difficulty": "Novice",
-      "length": "Very Short",
+      "length": "Short",
       "questPoints": "1",
       "series": "N/A",
-      "description": "A dwarf with a fondness for anvils requests that you complete a task for him before he allows you to utilize his equipment."
+      "members": false,
+      "description": "A dwarf craftsman requires specific materials for his work and will grant you access to his facilities if you can provide what he needs."
     },
     {
       "title": "Black Knights' Fortress",
-      "difficulty": "Intermediate",
-      "length": "Very Short",
+      "difficulty": "Novice",
+      "length": "Short",
       "questPoints": "3",
       "series": "N/A",
-      "description": "You are tasked with infiltrating a group of dark knights and sabotaging their hidden weapon, as their nefarious plans are a threat to the greater good."
+      "members": false,
+      "description": "An enemy order is plotting against the kingdom, and you must infiltrate their stronghold to discover and thwart their sinister plans."
     },
     {
       "title": "Witch's Potion",
       "difficulty": "Novice",
-      "length": "Very Short",
-      "questPoints": "1",
-      "series": "N/A",
-      "description": "Unlock your inner power by brewing a potion with the guidance of a mysterious witch, harnessing the magic within you."
-    },
-    {
-      "title": "Goblin Diplomacy",
-      "difficulty": "Novice",
-      "length": "Very Short",
-      "questPoints": "5",
-      "series": "N/A",
-      "description": "In a village inhabited by mischievous creatures, a conflict arises over the choice of colors to be worn, and it is crucial to mediate the dispute to prevent the world from facing the consequences of angry and unruly goblins."
-    },
-    {
-      "title": "Pirate's Treasure",
-      "difficulty": "Novice",
-      "length": "Very Short",
-      "questPoints": "2",
-      "series": "N/A",
-      "description": "A seasoned pirate possesses the location of a valuable treasure, but only relinquishes the information in exchange for a coveted bottle of exotic liquor."
-    },
-    {
-      "title": "Dragon Slayer I",
-      "difficulty": "Experienced",
-      "length": "Medium",
-      "questPoints": "2",
-      "series": "Dragonkin, #1",
-      "description": "Defeat the powerful dragon and earn the privilege to purchase and don the Rune platebody."
-    },
-    {
-      "title": "Rune Mysteries",
-      "difficulty": "Novice",
-      "length": "Short",
-      "questPoints": "1",
-      "series": "Order of Wizards, #1",
-      "description": "Help a wizard in a tower unlock the ancient art of creating runes, and you might learn the secrets of this long-forgotten magic."
-    },
-    {
-      "title": "Misthalin Mystery",
-      "difficulty": "Novice",
       "length": "Short",
       "questPoints": "1",
       "series": "N/A",
-      "description": "A grieving woman begs for help in preventing a mysterious assassin from claiming more lives, as her loved one lies dying in front of her."
-    },
-    {
-      "title": "X Marks the Spot",
-      "difficulty": "Novice",
-      "length": "Very Short",
-      "questPoints": "1",
-      "series": "Great Kourend, #1",
-      "description": "A skilled treasure hunter seeks assistance in navigating an unfamiliar region to locate a hidden prize."
-    },
-    {
-      "title": "Below Ice Mountain",
-      "difficulty": "Novice",
-      "length": "Short",
-      "questPoints": "1",
-      "series": "N/A",
-      "description": "An archaeologist seeks to uncover ancient ruins, but the entrance is sealed and requires a reunited crew of diverse skills to break in, despite the group's reservations about the archaeologist's intentions."
-    },
-    {
-      "title": "Sheep Shearer",
-      "difficulty": "Novice",
-      "length": "Very Short",
-      "questPoints": "1",
-      "series": "N/A",
-      "description": "A local farmer has a flock of sheep that are in dire need of grooming, and is willing to compensate you for your services."
-    },
-    {
-      "title": "Cook's Assistant",
-      "difficulty": "Novice",
-      "length": "Very Short",
-      "questPoints": "1",
-      "series": "N/A",
-      "description": "The cook at a grand estate is in a bind as they frantically search for ingredients to make a crucial dish for the estate's owner's birthday, with time running out."
-    },
-    {
-      "title": "The Corsair Curse",
-      "difficulty": "Intermediate",
-      "length": "Short",
-      "questPoints": "2",
-      "series": "N/A",
-      "description": "In the southern Feldip Hills, a captain from an unnamed town has sailed to Port Sarim seeking aid for his sick crew, which he believes is cursed due to conflicting tales of ancient relics, vengeful sea creatures, and demonic possession."
+      "members": false,
+      "description": "A practitioner of magic needs unusual ingredients for a concoction and offers to share her knowledge in exchange for your help."
     },
     {
       "title": "The Knight's Sword",
@@ -166,7 +114,341 @@
       "length": "Short",
       "questPoints": "1",
       "series": "N/A",
-      "description": "A squire has misplaced their master's ceremonial sword and seeks assistance in obtaining a new one without their master discovering the loss."
+      "members": false,
+      "description": "A squire has lost his master's prized weapon and must replace it before anyone discovers his mistake, requiring you to learn ancient forging techniques."
+    },
+    {
+      "title": "Goblin Diplomacy",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "5",
+      "series": "N/A",
+      "members": false,
+      "description": "Warring factions are fighting over fashion choices, and you must mediate their dispute before their conflict escalates into full-scale war."
+    },
+    {
+      "title": "Pirate's Treasure",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": false,
+      "description": "A drunken sailor reveals the location of hidden riches, and you must decipher his cryptic clues to claim the buried fortune."
+    },
+    {
+      "title": "Dragon Slayer I",
+      "difficulty": "Experienced",
+      "length": "Long",
+      "questPoints": "2",
+      "series": "Dragonkin, #1",
+      "members": false,
+      "description": "The most fearsome beast in the land threatens the realm, and you must prove yourself worthy of facing it in legendary combat."
+    },
+    {
+      "title": "Rune Mysteries",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": false,
+      "description": "Magical scholars seek assistance investigating mysterious energy sources that could unlock new methods of spellcasting."
+    },
+    {
+      "title": "Misthalin Mystery",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": false,
+      "description": "Strange deaths are occurring in the city, and you must work with investigators to uncover the truth behind these mysterious murders."
+    },
+    {
+      "title": "The Corsair Curse",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": false,
+      "description": "A supernatural affliction has transformed seafarers into undead creatures, and you must discover the source and break the hex."
+    },
+    {
+      "title": "X Marks the Spot",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": false,
+      "description": "A newcomer's guide to adventure awaits, teaching essential survival skills through a simple treasure hunting expedition."
+    },
+    {
+      "title": "Druidic Ritual",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "4",
+      "series": "N/A",
+      "members": true,
+      "description": "Nature worshippers require sacred materials for their ceremonies and will teach you their ancient crafting secrets in return."
+    },
+    {
+      "title": "Waterfall Quest",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Elf, #1",
+      "members": true,
+      "description": "Ancient treasures lie hidden beneath cascading waters, protected by puzzles and guardians from a long-lost civilization."
+    },
+    {
+      "title": "Tree Gnome Village",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": "2",
+      "series": "Gnome, #1",
+      "members": true,
+      "description": "A small settlement faces siege from hostile forces, and you must help defend their home and resolve the conflict."
+    },
+    {
+      "title": "Fight Arena",
+      "difficulty": "Experienced",
+      "length": "Short",
+      "questPoints": "2",
+      "series": "Mahjarrat, #1",
+      "members": true,
+      "description": "Captives are forced to battle for the entertainment of crowds, and you must survive deadly combat to free the prisoners."
+    },
+    {
+      "title": "Witch's House",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "4",
+      "series": "N/A",
+      "members": true,
+      "description": "A seemingly abandoned dwelling hides dangerous secrets and magical traps set by its former occupant to protect dark experiments."
+    },
+    {
+      "title": "Lost City",
+      "difficulty": "Experienced",
+      "length": "Short",
+      "questPoints": "3",
+      "series": "N/A",
+      "members": true,
+      "description": "Legends speak of a hidden realm accessible only through mysterious portals, where magical beings guard powerful artifacts."
+    },
+    {
+      "title": "Monkey Madness I",
+      "difficulty": "Master",
+      "length": "Long",
+      "questPoints": "3",
+      "series": "Gnome, #3",
+      "members": true,
+      "description": "A military reconnaissance mission to a primate-controlled island reveals a conspiracy that threatens the entire realm."
+    },
+    {
+      "title": "Desert Treasure I",
+      "difficulty": "Master",
+      "length": "Long",
+      "questPoints": "3",
+      "series": "Mahjarrat, #5",
+      "members": true,
+      "description": "Ancient gemstones of immense power are scattered across dangerous locations, guarded by fearsome entities from a forgotten age."
+    },
+    {
+      "title": "Recipe for Disaster",
+      "difficulty": "Special",
+      "length": "Very Long",
+      "questPoints": "10",
+      "series": "N/A",
+      "members": true,
+      "description": "A catastrophic magical accident has frozen important figures in time, and you must complete numerous challenges to reverse the spell."
+    },
+    {
+      "title": "Lunar Diplomacy",
+      "difficulty": "Experienced",
+      "length": "Long",
+      "questPoints": "2",
+      "series": "Fremennik, #5",
+      "members": true,
+      "description": "A remote island society practices dream magic, and you must prove yourself worthy to learn their mystical arts and gain their trust."
+    },
+    {
+      "title": "Animal Magnetism",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": true,
+      "description": "An eccentric inventor needs assistance creating an unusual device that will revolutionize the way adventurers carry their equipment."
+    },
+    {
+      "title": "Horror from the Deep",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": true,
+      "description": "A lighthouse keeper has disappeared, and investigating his fate reveals an ancient threat awakening in the depths below."
+    },
+    {
+      "title": "The Grand Tree",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": "5",
+      "series": "Gnome, #2",
+      "members": true,
+      "description": "The sacred tree of a civilization is mysteriously dying, and you must uncover the saboteur threatening their entire society."
+    },
+    {
+      "title": "The Fremennik Trials",
+      "difficulty": "Intermediate",
+      "length": "Long",
+      "questPoints": "3",
+      "series": "Fremennik, #1",
+      "members": true,
+      "description": "A warrior culture demands outsiders prove their worth through various tests before granting them membership in their society."
+    },
+    {
+      "title": "Fairy Tale I - Growing Pains",
+      "difficulty": "Experienced",
+      "length": "Short",
+      "questPoints": "2",
+      "series": "Fairy Tale, #1",
+      "members": true,
+      "description": "Magical creatures are falling ill under mysterious circumstances, and you must investigate what is causing their suffering."
+    },
+    {
+      "title": "Fairy Tale II - Cure a Queen",
+      "difficulty": "Experienced",
+      "length": "Long",
+      "questPoints": "2",
+      "series": "Fairy Tale, #2",
+      "members": true,
+      "description": "The ruler of the fairy realm has been poisoned, and you must journey through their network of portals to find a cure."
+    },
+    {
+      "title": "Plague City",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "Elf, #2",
+      "members": true,
+      "description": "A mysterious illness has quarantined part of a city, and you must investigate whether the authorities are telling the truth about the situation."
+    },
+    {
+      "title": "Biohazard",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "3",
+      "series": "Elf, #3",
+      "members": true,
+      "description": "A scientist needs dangerous samples smuggled past security, requiring you to coordinate with accomplices across multiple locations."
+    },
+    {
+      "title": "Underground Pass",
+      "difficulty": "Experienced",
+      "length": "Long",
+      "questPoints": "5",
+      "series": "Elf, #4",
+      "members": true,
+      "description": "A treacherous subterranean route conceals dark magic and deadly traps, testing your skills as you traverse towards a distant realm."
+    },
+    {
+      "title": "Regicide",
+      "difficulty": "Master",
+      "length": "Long",
+      "questPoints": "3",
+      "series": "Elf, #5",
+      "members": true,
+      "description": "A monarch tasks you with assassinating his tyrannical brother, leading you deep into enemy territory with explosives and deception."
+    },
+    {
+      "title": "Roving Elves",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Elf, #6",
+      "members": true,
+      "description": "A traveling elven warrior seeks a sacred crystal, and you must navigate a dangerous forest to recover this powerful artifact."
+    },
+    {
+      "title": "Mourning's End Part I",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Elf, #7",
+      "members": true,
+      "description": "Rebel elves need intelligence from enemy headquarters, requiring you to infiltrate their operations through careful disguise and subterfuge."
+    },
+    {
+      "title": "Mourning's End Part II",
+      "difficulty": "Master",
+      "length": "Long",
+      "questPoints": "2",
+      "series": "Elf, #8",
+      "members": true,
+      "description": "Ancient machinery must be restored in a temple of shadows, where light puzzles and deadly creatures guard forbidden knowledge."
+    },
+    {
+      "title": "Song of the Elves",
+      "difficulty": "Grandmaster",
+      "length": "Very Long",
+      "questPoints": "4",
+      "series": "Elf, #9",
+      "members": true,
+      "description": "The final confrontation with corrupted forces threatens an ancient civilization, and you must unite fractured factions to save their homeland."
+    },
+    {
+      "title": "Priest in Peril",
+      "difficulty": "Novice",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Myreque, #1",
+      "members": true,
+      "description": "A temple守护者 has gone missing, and investigating his disappearance reveals a gateway to a land shrouded in darkness and danger."
+    },
+    {
+      "title": "In Aid of the Myreque",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Myreque, #2",
+      "members": true,
+      "description": "A resistance movement fighting vampiric oppression needs supplies and support to continue their struggle against supernatural overlords."
+    },
+    {
+      "title": "Darkness of Hallowvale",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Myreque, #3",
+      "members": true,
+      "description": "Infiltrating a vampire-controlled city requires disguise and cunning as you work to undermine their grip on enslaved citizens."
+    },
+    {
+      "title": "Legacy of Seergaze",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Myreque, #4",
+      "members": true,
+      "description": "Ancient bloodlines hold secrets to defeating vampire lords, and you must uncover these mysteries while the resistance faces annihilation."
+    },
+    {
+      "title": "Sins of the Father",
+      "difficulty": "Master",
+      "length": "Long",
+      "questPoints": "2",
+      "series": "Myreque, #5",
+      "members": true,
+      "description": "The vampire lord's castle holds dark secrets about your ally's past, leading to a confrontation that will determine the fate of the resistance."
+    },
+    {
+      "title": "A Taste of Hope",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Myreque, #6",
+      "members": true,
+      "description": "A daring plan to strike at the heart of vampire nobility requires careful preparation and allies willing to risk everything."
     },
     {
       "title": "The Restless Ghost",
@@ -174,7 +456,971 @@
       "length": "Short",
       "questPoints": "1",
       "series": "N/A",
-      "description": "A supernatural entity is terrorizing a cemetery, prompting a religious leader to enlist your assistance in resolving the problem."
+      "members": false,
+      "description": "A spirit haunts a graveyard, unable to rest until you help recover what was stolen from their final resting place."
+    },
+    {
+      "title": "The Knight's Sword",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": false,
+      "description": "A squire has lost his master's prized weapon and must replace it before anyone discovers his mistake, requiring you to learn ancient forging techniques."
+    },
+    {
+      "title": "Throne of Miscellania",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Fremennik, #6",
+      "members": true,
+      "description": "Political intrigue on a northern island requires you to court royalty and resolve conflicts to unite feuding kingdoms."
+    },
+    {
+      "title": "Royal Trouble",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Fremennik, #7",
+      "members": true,
+      "description": "Your royal marriage faces challenges as monsters invade and you must defend your kingdom while maintaining diplomatic relations."
+    },
+    {
+      "title": "The Fremennik Isles",
+      "difficulty": "Experienced",
+      "length": "Long",
+      "questPoints": "1",
+      "series": "Fremennik, #8",
+      "members": true,
+      "description": "Two rival settlements seek your aid in conflicts both petty and profound, while ancient creatures stir beneath frozen wastes."
+    },
+    {
+      "title": "Mountain Daughter",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Fremennik, #2",
+      "members": true,
+      "description": "A mountain tribe mourns their chieftain's daughter, and you must uncover the truth behind her death and bring peace to restless spirits."
+    },
+    {
+      "title": "The Giant Dwarf",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Rise of the Red Axe, #1",
+      "members": true,
+      "description": "Dwarven politics and industrial conspiracy threaten their underground city, and you must investigate corruption within their government."
+    },
+    {
+      "title": "Forgettable Tale of a Drunken Dwarf",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Rise of the Red Axe, #2",
+      "members": true,
+      "description": "A dwarf's drunken night has serious consequences for his memories, and you must piece together what happened before disaster strikes."
+    },
+    {
+      "title": "The Lost Tribe",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Dorgeshuun, #1",
+      "members": true,
+      "description": "An underground cave-in reveals a hidden civilization of peaceful beings, isolated from the surface world for generations."
+    },
+    {
+      "title": "Death to the Dorgeshuun",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Dorgeshuun, #2",
+      "members": true,
+      "description": "Warmongers plot genocide against the cave-dwelling civilization, and you must prevent conflict while uncovering a conspiracy."
+    },
+    {
+      "title": "Another Slice of H.A.M.",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Dorgeshuun, #3",
+      "members": true,
+      "description": "A hate group's criminal activities escalate, and you must infiltrate their organization to stop their plans against innocent creatures."
+    },
+    {
+      "title": "Land of the Goblins",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Dorgeshuun, #4",
+      "members": true,
+      "description": "Journey to the homeland of an ancient race and prevent powerful artifacts from falling into the hands of those who would abuse them."
+    },
+    {
+      "title": "Hopespear's Will",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Dorgeshuun, #5",
+      "members": true,
+      "description": "War looms between species, and your companion must embrace their destiny as a leader to prevent catastrophic conflict."
+    },
+    {
+      "title": "Contact!",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Desert, #4",
+      "members": true,
+      "description": "Communication with a desert city has been severed, and investigating reveals monstrous parasites threatening to consume the entire population."
+    },
+    {
+      "title": "Shilo Village",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": true,
+      "description": "A cursed settlement needs liberation from an undead terror that has plagued it for generations, requiring you to delve into ancient tombs."
+    },
+    {
+      "title": "Tai Bwo Wannai Trio",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": true,
+      "description": "Three villagers each need assistance with unique problems, testing your skills in combat, fishing, and cooking in the jungle."
+    },
+    {
+      "title": "Jungle Potion",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": true,
+      "description": "A shaman's ritual components are scattered throughout the wilderness, and you must retrieve them from dangerous locations."
+    },
+    {
+      "title": "Cabin Fever",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Pirate, #4",
+      "members": true,
+      "description": "Joining a pirate crew requires proving yourself worthy through a series of tests before embarking on a treacherous sea voyage."
+    },
+    {
+      "title": "Rum Deal",
+      "difficulty": "Experienced",
+      "length": "Long",
+      "questPoints": "2",
+      "series": "Pirate, #3",
+      "members": true,
+      "description": "A brewery's production has been disrupted by supernatural forces, and you must cleanse the facility of undead manifestations."
+    },
+    {
+      "title": "Zogre Flesh Eaters",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": true,
+      "description": "Undead creatures besieged a settlement, and discovering their origin reveals a tragic tale of betrayal and necromancy."
+    },
+    {
+      "title": "Big Chompy Bird Hunting",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": true,
+      "description": "An ogre is famished and demands you help him hunt massive birds, teaching you specialized hunting techniques."
+    },
+    {
+      "title": "Elemental Workshop I",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "Elemental Workshop, #1",
+      "members": true,
+      "description": "A mysterious workshop hidden beneath a library contains ancient smithing techniques for creating magical metals."
+    },
+    {
+      "title": "Elemental Workshop II",
+      "difficulty": "Intermediate",
+      "length": "Long",
+      "questPoints": "1",
+      "series": "Elemental Workshop, #2",
+      "members": true,
+      "description": "Deeper levels of the elemental facility hold more complex puzzles and the secrets to crafting even more powerful equipment."
+    },
+    {
+      "title": "Creature of Fenkenstrain",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": true,
+      "description": "A mad scientist seeks to create artificial life, and you must assist in gathering peculiar components for his twisted experiment."
+    },
+    {
+      "title": "A Soul's Bane",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": true,
+      "description": "A mother's son is trapped in a dimensional rift of negative emotions, and you must battle manifestations of anger, fear, confusion, and despair."
+    },
+    {
+      "title": "Haunted Mine",
+      "difficulty": "Experienced",
+      "length": "Long",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": true,
+      "description": "An abandoned mining operation harbors restless spirits and a powerful crystal that drives men to madness."
+    },
+    {
+      "title": "Troll Stronghold",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": true,
+      "description": "Rescuing a prisoner from a mountain fortress requires stealth, combat prowess, and navigating through hostile troll territory."
+    },
+    {
+      "title": "Troll Romance",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": true,
+      "description": "Helping a lovelorn troll win a mate requires you to understand their unusual courtship rituals and compete in their challenges."
+    },
+    {
+      "title": "Death Plateau",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": true,
+      "description": "A military campaign has stalled against troll forces, and you must secure equipment and intelligence to turn the tide of battle."
+    },
+    {
+      "title": "Eadgar's Ruse",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": true,
+      "description": "A hermit needs rare ingredients for a potion that will allow him to reclaim something precious stolen by trolls."
+    },
+    {
+      "title": "My Arm's Big Adventure",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": true,
+      "description": "A surprisingly intelligent troll seeks your help learning agriculture to grow food on his frozen mountain home."
+    },
+    {
+      "title": "Making Friends with My Arm",
+      "difficulty": "Master",
+      "length": "Long",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": true,
+      "description": "Your troll friend's farming success has attracted unwanted attention, and you must defend his crops from jealous rivals and disease."
+    },
+    {
+      "title": "Enakhra's Lament",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Mahjarrat, #3",
+      "members": true,
+      "description": "An ancient sorceress is constructing a monument to her lost love, and you must help complete it while avoiding deadly traps."
+    },
+    {
+      "title": "Temple of Ikov",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Mahjarrat, #2",
+      "members": true,
+      "description": "Thieves seek a powerful artifact guarded by armored creatures in a temple of deception and moral choices."
+    },
+    {
+      "title": "The Dig Site",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": true,
+      "description": "Archaeological excavations have uncovered something dangerous, and you must earn credentials to access restricted dig sites."
+    },
+    {
+      "title": "The Tourist Trap",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Desert, #2",
+      "members": true,
+      "description": "A merchant's daughter has vanished near a desert mining operation that uses enslaved workers for sinister purposes."
+    },
+    {
+      "title": "The Feud",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Desert, #3",
+      "members": true,
+      "description": "Two rival gangs terrorize a desert city, and you must work undercover to end their conflict and uncover who truly benefits."
+    },
+    {
+      "title": "Icthlarin's Little Helper",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Desert, #5",
+      "members": true,
+      "description": "A deity's sacred artifacts have been stolen for a necromantic ritual, and you must venture into the afterlife to prevent catastrophe."
+    },
+    {
+      "title": "Spirits of the Elid",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Desert, #6",
+      "members": true,
+      "description": "A village's water supply has mysteriously dried up, and ancient spirits must be appeased to restore the life-giving flow."
+    },
+    {
+      "title": "Dealing with Scabaras",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Desert, #7",
+      "members": true,
+      "description": "Insectoid creatures are multiplying beneath the desert, and their deity's power grows as you investigate ancient ruins."
+    },
+    {
+      "title": "Dragon Slayer II",
+      "difficulty": "Grandmaster",
+      "length": "Very Long",
+      "questPoints": "5",
+      "series": "Dragonkin, #2",
+      "members": true,
+      "description": "An ancient dragon threat has returned, and you must assemble allies and legendary equipment to prevent the resurrection of a devastating force."
+    },
+    {
+      "title": "Monkey Madness II",
+      "difficulty": "Grandmaster",
+      "length": "Very Long",
+      "questPoints": "4",
+      "series": "Gnome, #4",
+      "members": true,
+      "description": "A vengeful ape lord returns with demonic allies, forcing you to infiltrate enemy territory and face impossible odds to save the realm."
+    },
+    {
+      "title": "Swan Song",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": true,
+      "description": "A fishing colony faces extinction from sea monsters, and you must defend their settlement while uncovering the source of the invasion."
+    },
+    {
+      "title": "Garden of Tranquillity",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": true,
+      "description": "A queen desires a magnificent garden for her anniversary, and you must gather rare plants from across the world to fulfill her vision."
+    },
+    {
+      "title": "A Clockwork Syringe",
+      "difficulty": "Novice",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Penguin, #1",
+      "members": true,
+      "description": "Strange mechanical birds are conducting espionage, and you must help expose their surveillance network and discover their true purpose."
+    },
+    {
+      "title": "Cold War",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Penguin, #2",
+      "members": true,
+      "description": "Infiltrating a secretive organization of arctic birds reveals their plans for world domination through increasingly absurd schemes."
+    },
+    {
+      "title": "The Fremennik Exiles",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Fremennik, #9",
+      "members": true,
+      "description": "Basilisks threaten a northern settlement, and investigating their origin leads to discoveries about exiled warriors and ancient curses."
+    },
+    {
+      "title": "Grim Tales",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": true,
+      "description": "A family's dark secrets span multiple dimensions, and you must venture into twisted fairy tale realms to save them from supernatural forces."
+    },
+    {
+      "title": "Dream Mentor",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Fremennik, #10",
+      "members": true,
+      "description": "A warrior is trapped in his nightmares, and you must enter his subconscious to battle the demons of his past and restore his sanity."
+    },
+    {
+      "title": "What Lies Below",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Mahjarrat, #4",
+      "members": true,
+      "description": "Ancient evil stirs beneath the capital city, and uncovering a conspiracy reveals plans to unleash chaos from the depths."
+    },
+    {
+      "title": "King's Ransom",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Camelot, #7",
+      "members": true,
+      "description": "A monarch has been captured by sinister forces, and rescuing him requires assembling a team of specialists for a daring raid."
+    },
+    {
+      "title": "Merlin's Crystal",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "6",
+      "series": "Camelot, #1",
+      "members": false,
+      "description": "A powerful wizard has been imprisoned in magical crystal, and freeing him requires solving mystical puzzles and confronting dark magic."
+    },
+    {
+      "title": "Holy Grail",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Camelot, #2",
+      "members": true,
+      "description": "Knights seek their most sacred relic, and your quest leads through mystical realms where faith and valor are tested."
+    },
+    {
+      "title": "Murder Mystery",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "3",
+      "series": "Camelot, #3",
+      "members": true,
+      "description": "A noble has been killed at a party, and you must investigate suspects, gather evidence, and deduce the murderer's identity."
+    },
+    {
+      "title": "One Small Favour",
+      "difficulty": "Experienced",
+      "length": "Very Long",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": true,
+      "description": "A simple request spirals into an endless chain of favors across the entire continent, testing your patience and problem-solving skills."
+    },
+    {
+      "title": "Fishing Contest",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": true,
+      "description": "Winning a fishing competition against skilled rivals grants access to restricted territory and reveals surprising cheating methods."
+    },
+    {
+      "title": "Sea Slug",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "Sea Slug, #1",
+      "members": true,
+      "description": "Fishermen are acting strangely, and investigating reveals parasitic creatures are controlling their minds for sinister purposes."
+    },
+    {
+      "title": "Slug Menace",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Sea Slug, #2",
+      "members": true,
+      "description": "The mind-control conspiracy goes deeper than imagined, and you must infiltrate the creatures' temple to stop their invasion plans."
+    },
+    {
+      "title": "Wanted!",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Temple Knight, #1",
+      "members": true,
+      "description": "A criminal mastermind threatens the kingdom, and bringing him to justice requires becoming a deputy in an elite order of knights."
+    },
+    {
+      "title": "Recruitment Drive",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "Temple Knight, #2",
+      "members": true,
+      "description": "Joining a prestigious organization requires passing peculiar tests that challenge logic, perception, and lateral thinking."
+    },
+    {
+      "title": "The Slug Menace",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Sea Slug, #2",
+      "members": true,
+      "description": "Mind-controlling parasites have infiltrated positions of power, and exposing their plot requires courage and investigative skills."
+    },
+    {
+      "title": "Tears of Guthix",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": true,
+      "description": "A serpent guardian protects a cave of magical tears that can grant knowledge, requiring you to prove your worthiness through completed deeds."
+    },
+    {
+      "title": "A Tail of Two Cats",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": true,
+      "description": "Your feline companion has been replaced by an imposter, and uncovering this mystery reveals a plot involving rare spices and organized crime."
+    },
+    {
+      "title": "Icthlarin's Little Helper",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Desert, #5",
+      "members": true,
+      "description": "Sacred funeral artifacts have been stolen to raise an undead army, requiring you to navigate the realm of the dead itself."
+    },
+    {
+      "title": "Ratcatchers",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": true,
+      "description": "A mansion is overrun with vermin, but solving this pest problem reveals corruption in high places and requires your feline friend's help."
+    },
+    {
+      "title": "Spirits of the Elid",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Desert, #6",
+      "members": true,
+      "description": "A village suffers from drought caused by vengeful spirits, and only by righting ancient wrongs can water flow again."
+    },
+    {
+      "title": "Devious Minds",
+      "difficulty": "Experienced",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "Mahjarrat, #6",
+      "members": true,
+      "description": "A monk requests help with a ritual, but his true intentions involve dark magic and testing your moral boundaries."
+    },
+    {
+      "title": "The Hand in the Sand",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": true,
+      "description": "A wizard has been transformed into sand, and solving his mysterious transformation reveals industrial sabotage and romance."
+    },
+    {
+      "title": "Tower of Life",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": true,
+      "description": "Researchers are conducting bizarre experiments combining different creatures, and you must help complete their facility and create hybrid beings."
+    },
+    {
+      "title": "Scorpion Catcher",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": true,
+      "description": "A wizard's escaped scorpions are scattered across the realm, and retrieving them before they cause havoc tests your tracking abilities."
+    },
+    {
+      "title": "Clock Tower",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": true,
+      "description": "A broken timepiece needs its cogs recovered and reinstalled, requiring you to navigate the tower's mechanical complexities."
+    },
+    {
+      "title": "Dwarf Cannon",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": true,
+      "description": "Dwarven engineers need help defending their position with advanced weaponry, granting you access to their military technology."
+    },
+    {
+      "title": "Hazeel Cult",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "Mahjarrat, #7",
+      "members": true,
+      "description": "An ancient evil's followers plot resurrection, and you must choose whether to stop them or aid their dark ritual."
+    },
+    {
+      "title": "Sheep Herder",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "4",
+      "series": "N/A",
+      "members": true,
+      "description": "Diseased livestock must be contained and destroyed before a plague spreads, requiring careful handling of infected animals."
+    },
+    {
+      "title": "Plague City",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "Elf, #2",
+      "members": true,
+      "description": "A quarantined district hides suspicious activity, and investigating reveals the plague may not be what authorities claim."
+    },
+    {
+      "title": "Observatory Quest",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": true,
+      "description": "An astronomical facility has been damaged by monsters, and repairing it unlocks the ability to study celestial bodies."
+    },
+    {
+      "title": "The Golem",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Desert, #1",
+      "members": true,
+      "description": "An animated clay guardian endlessly performs a task it no longer understands, and you must help it discover its true purpose."
+    },
+    {
+      "title": "Demon Slayer",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "3",
+      "series": "N/A",
+      "members": false,
+      "description": "A demon threatens to destroy the city, and only you can wield the legendary sword capable of banishing this evil entity."
+    },
+    {
+      "title": "Shadow of the Storm",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": true,
+      "description": "The demon you once defeated seeks revenge, and preventing his return requires gathering allies and facing your past mistakes."
+    },
+    {
+      "title": "The Eyes of Glouphrie",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Gnome, #5",
+      "members": true,
+      "description": "An evil gnome's surveillance network threatens his own people, and dismantling it reveals deeper conspiracies within their society."
+    },
+    {
+      "title": "In Search of the Myreque",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Myreque, #2",
+      "members": true,
+      "description": "Finding the vampire resistance requires navigating dangerous swamps and proving yourself worthy to join their cause."
+    },
+    {
+      "title": "Nature Spirit",
+      "difficulty": "Novice",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": true,
+      "description": "A corrupted nature spirit must be purified to restore balance to a haunted swamp filled with undead creatures."
+    },
+    {
+      "title": "In Search of Knowledge",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "Great Kourend, #2",
+      "members": true,
+      "description": "A library holds forgotten secrets, and helping organize ancient texts unlocks access to powerful magical knowledge."
+    },
+    {
+      "title": "Architectural Alliance",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "Great Kourend, #1",
+      "members": true,
+      "description": "A new kingdom needs assistance developing its infrastructure, and your efforts help establish your reputation in this foreign land."
+    },
+    {
+      "title": "The Forsaken Tower",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "Great Kourend, #3",
+      "members": true,
+      "description": "An abandoned magical tower conceals a tragic story, and investigating its mysteries helps a settlement understand its dark past."
+    },
+    {
+      "title": "The Depths of Despair",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Great Kourend, #4",
+      "members": true,
+      "description": "A underwater creature threatens fishermen, and discovering the source leads to uncovering a smuggling operation and corruption."
+    },
+    {
+      "title": "The Queen of Thieves",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "Great Kourend, #5",
+      "members": true,
+      "description": "A crime boss needs your assistance with various tasks to prove your loyalty and gain access to the underworld's resources."
+    },
+    {
+      "title": "The Ascent of Arceuus",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Great Kourend, #6",
+      "members": true,
+      "description": "Helping a magical house with their research into necromancy reveals ethical dilemmas about life, death, and forbidden knowledge."
+    },
+    {
+      "title": "A Porcine of Interest",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "Great Kourend, #7",
+      "members": true,
+      "description": "Investigating missing pigs leads to uncovering a conspiracy involving beast masters and rival houses within the kingdom."
+    },
+    {
+      "title": "The Forsaken Tower",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "Great Kourend, #8",
+      "members": true,
+      "description": "Restoring power to an ancient tower requires solving magical puzzles and confronting the ghosts of past failures."
+    },
+    {
+      "title": "Tale of the Righteous",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Great Kourend, #9",
+      "members": true,
+      "description": "A religious order's sacred text has been stolen, and recovering it reveals corruption within their ranks and tests your faith."
+    },
+    {
+      "title": "A Kingdom Divided",
+      "difficulty": "Experienced",
+      "length": "Very Long",
+      "questPoints": "2",
+      "series": "Great Kourend, #10",
+      "members": true,
+      "description": "Civil war threatens to tear apart a kingdom, and you must navigate political intrigue and ancient magic to prevent catastrophe."
+    },
+    {
+      "title": "Witch's House",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "4",
+      "series": "N/A",
+      "members": true,
+      "description": "A seemingly abandoned cottage is filled with deadly traps and experiments, culminating in a battle against a powerful transformed creature."
+    },
+    {
+      "title": "Watchtower",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "4",
+      "series": "N/A",
+      "members": true,
+      "description": "A defensive structure has been corrupted by evil magic, and cleansing it requires gathering components and battling supernatural forces."
+    },
+    {
+      "title": "Eagles' Peak",
+      "difficulty": "Novice",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": true,
+      "description": "Giant birds have vanished from their mountain home, and investigating their disappearance reveals a ferret hunter's cruel trap."
+    },
+    {
+      "title": "Rag and Bone Man I",
+      "difficulty": "Novice",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Rag and Bone Man, #1",
+      "members": true,
+      "description": "An eccentric collector needs bones from various creatures, sending you on a scavenger hunt across the realm's diverse ecosystems."
+    },
+    {
+      "title": "Rag and Bone Man II",
+      "difficulty": "Experienced",
+      "length": "Long",
+      "questPoints": "1",
+      "series": "Rag and Bone Man, #2",
+      "members": true,
+      "description": "The bone collector has an even more extensive wish list, requiring you to hunt rare and dangerous creatures for their remains."
+    },
+    {
+      "title": "Enlightened Journey",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": true,
+      "description": "An inventor needs help perfecting his flying machine, unlocking a revolutionary transportation method that connects distant lands."
+    },
+    {
+      "title": "Animal Magnetism",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": true,
+      "description": "A mad scientist's latest invention promises to revolutionize item retrieval, but completing it requires unusual and slightly disturbing components."
+    },
+    {
+      "title": "Between a Rock...",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "N/A",
+      "members": true,
+      "description": "Dwarves and gnomes are at war over a religious site, and mediating their dispute requires understanding both cultures and ancient history."
+    },
+    {
+      "title": "The Feud",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Desert, #3",
+      "members": true,
+      "description": "Two criminal organizations terrorize a desert town, and infiltrating both sides reveals a deeper conspiracy manipulating their conflict."
+    },
+    {
+      "title": "Tribal Totem",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": "1",
+      "series": "N/A",
+      "members": true,
+      "description": "A sacred artifact has been stolen and displayed as a trophy, requiring stealth and cunning to infiltrate a fortress and reclaim it."
+    },
+    {
+      "title": "The Giant Dwarf",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Rise of the Red Axe, #1",
+      "members": true,
+      "description": "Political intrigue threatens dwarven society as you investigate suspicious activities in their underground capital city."
+    },
+    {
+      "title": "Forgettable Tale of a Drunken Dwarf",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Rise of the Red Axe, #2",
+      "members": true,
+      "description": "A dwarf's lost weekend has serious consequences for his life and career, requiring you to piece together what happened through investigation."
+    },
+    {
+      "title": "Children of the Sun",
+      "difficulty": "Master",
+      "length": "Long",
+      "questPoints": "2",
+      "series": "Desert, #8",
+      "members": true,
+      "description": "Ancient solar magic awakens in the desert, and you must prevent zealots from unleashing its destructive power upon the world."
+    },
+    {
+      "title": "Defender of Varrock",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": "2",
+      "series": "Mahjarrat, #10",
+      "members": true,
+      "description": "The capital city faces invasion from ancient beings, and you must rally its defenses while uncovering a conspiracy within its walls."
+    },
+    {
+      "title": "The Curse of Arrav",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": "1",
+      "series": "Mahjarrat, #11",
+      "members": true,
+      "description": "An ancient warrior's cursed remains must be recovered from a dangerous tomb before they fall into the wrong hands."
+    },
+    {
+      "title": "Desert Treasure II - The Fallen Empire",
+      "difficulty": "Grandmaster",
+      "length": "Very Long",
+      "questPoints": "5",
+      "series": "Mahjarrat, #12",
+      "members": true,
+      "description": "The remnants of an ancient civilization threaten to reshape reality itself, requiring you to master all forms of magic and combat."
     }
   ]
 }
